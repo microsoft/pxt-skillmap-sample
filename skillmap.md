@@ -13,7 +13,7 @@
 * name: Activity 1
 * type: tutorial
 * description: A tutorial activity that will grant an "easy" tag when completed
-* url: github:https://github.com/microsoft/pxt-skillmap-sample/blob/main/tutorials/map1/activity1.md
+* url: tutorial:https://github.com/microsoft/pxt-skillmap-sample/tutorials/map1/activity1
 * tags: easy
 * next: map1-activity2
 
@@ -22,7 +22,7 @@
 * name: Activity 2
 * type: tutorial
 * description: A tutorial activity that will grant an "easy" tag when completed
-* url: github:microsoft/pxt-skillmap-sample/tutorials/map1/activity2
+* url: tutorial:https://github.com/microsoft/pxt-skillmap-sample/tutorials/map1/activity2
 * tags: easy
 * next: map1-activity3
 
@@ -31,7 +31,7 @@
 * name: Activity 3
 * type: tutorial
 * description: A tutorial activity that will grant an "easy" tag when completed
-* url: github:microsoft/pxt-skillmap-sample/tutorials/map1/activity3
+* url: tutorial:https://github.com/microsoft/pxt-skillmap-sample/tutorials/map1/activity3
 * tags: easy
 
 
@@ -44,7 +44,7 @@
 * name: Activity 1
 * type: tutorial
 * description: A tutorial activity that will grant an "coding" tag when completed
-* url: github:microsoft/pxt-skillmap-sample/tutorials/map2/activity1
+* url: tutorial:https://github.com/microsoft/pxt-skillmap-sample/tutorials/map2/activity1
 * tags: coding
 
 ## locked
@@ -57,5 +57,5 @@
 * name: Activity 1
 * type: tutorial
 * description: A tutorial activity that will grant an "coding" tag when completed
-* url: github:microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
+* url: tutorial:https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
 * tags: coding
