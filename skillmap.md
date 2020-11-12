@@ -13,7 +13,7 @@
 * name: Activity 1
 * type: tutorial
 * description: A tutorial activity that will grant an "easy" tag when completed
-* url: github:microsoft/pxt-skillmap-sample/tutorials/map1/activity1
+* url: github:https://github.com/microsoft/pxt-skillmap-sample/blob/main/tutorials/map1/activity1.md
 * tags: easy
 * next: map1-activity2
 
