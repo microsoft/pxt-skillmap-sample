@@ -4,6 +4,7 @@
 * infoUrl: /docs/educator-info
 
 
+
 ## map1
 * name: First Skill Map
 * description: A three step MakeCode Skillmap
@@ -35,6 +36,7 @@
 * tags: easy
 
 
+
 ## map2
 * name: Second Skill Map
 * description: A single step MakeCode skillmap
@@ -51,6 +53,8 @@
 * name: Locked Skill Map
 * description: A map that is locked until you complete three easy tutorials
 * required: 3 easy
+
+
 
 ### locked-map-activity1
 

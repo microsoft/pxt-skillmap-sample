@@ -2,6 +2,11 @@
 
 Test this by going to https://arcade.makecode.com/skillmap#github:https://github.com/microsoft/pxt-skillmap-sample/blob/main/skillmap.md
 
+
+## Forking
+
+If you fork this repo, be sure to change all URL references to https://github.com/microsoft/pxt-skillmap-sample to your forked repo's URL. Otherwise you won't see your changes.
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
