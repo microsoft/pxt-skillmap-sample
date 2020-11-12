@@ -52,7 +52,7 @@
 * description: A map that is locked until you complete three easy tutorials
 * required: 3 easy
 
-### map2-activity1
+### locked-map-activity1
 
 * name: Activity 1
 * type: tutorial
