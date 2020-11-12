@@ -1,0 +1,27 @@
+{
+    "name": "pxt-skillmap-sample",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "README.md",
+        "tutorials/map1/activity1.md",
+        "tutorials/map1/activity2.md",
+        "tutorials/map1/activity3.md",
+        "tutorials/map2/activity1.md",
+        "tutorials/lockedmap/activity1.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.0.16",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}
