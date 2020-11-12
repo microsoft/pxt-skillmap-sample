@@ -14,7 +14,6 @@
         "tutorials/lockedmap/activity1.md"
     ],
     "testFiles": [
-        "test.ts"
     ],
     "targetVersions": {
         "target": "1.0.16",
