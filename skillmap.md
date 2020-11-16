@@ -50,7 +50,7 @@
 * tags: coding
 
 ## locked
-* name: Locked Skill Map
+* name: Locked 1
 * description: A map that is locked until you complete three easy tutorials
 * required: 3 easy
 
@@ -65,7 +65,7 @@
 * tags: coding
 
 ## locked2
-* name: Locked Skill Map
+* name: Locked 2
 * description: A map that is locked until you complete three easy tutorials
 * required: locked
 
@@ -79,7 +79,7 @@
 * tags: coding
 
 ## locked3
-* name: Locked Skill Map
+* name: Locked 3
 * description: A map that is locked until you complete three easy tutorials
 * required: 2 easy, 1 coding, locked
 
