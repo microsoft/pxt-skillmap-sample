@@ -63,3 +63,31 @@
 * description: A tutorial activity that will grant an "coding" tag when completed
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
 * tags: coding
+
+## locked2
+* name: Locked Skill Map
+* description: A map that is locked until you complete three easy tutorials
+* required: locked
+
+
+### locked2-map-activity1
+
+* name: Activity 1
+* type: tutorial
+* description: A tutorial activity that will grant an "coding" tag when completed
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
+* tags: coding
+
+## locked3
+* name: Locked Skill Map
+* description: A map that is locked until you complete three easy tutorials
+* required: 2 easy, 1 coding, locked
+
+
+### locked3-map-activity1
+
+* name: Activity 1
+* type: tutorial
+* description: A tutorial activity that will grant an "coding" tag when completed
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
+* tags: coding
