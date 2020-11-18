@@ -8,6 +8,7 @@
     "files": [
         "README.md",
         "skillmap.md",
+        "_locales/fr/skillmap.md",
         "tutorials/map1/activity1.md",
         "tutorials/map1/activity2.md",
         "tutorials/map1/activity3.md",
