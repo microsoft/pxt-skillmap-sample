@@ -42,7 +42,7 @@
 * type: tutorial
 * description: Add a second level to your platformer using functions
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity4
-* tags: intermediate
+* tags: intermediate, functions
 * next: platformer-activity5
 
 ### platformer-activity5
