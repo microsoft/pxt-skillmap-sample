@@ -9,11 +9,16 @@
         "README.md",
         "skillmap.md",
         "_locales/fr/skillmap.md",
-        "tutorials/map1/activity1.md",
-        "tutorials/map1/activity2.md",
-        "tutorials/map1/activity3.md",
-        "tutorials/map2/activity1.md",
-        "tutorials/lockedmap/activity1.md"
+        "tutorials/platformer/activity1.md",
+        "tutorials/platformer/activity2.md",
+        "tutorials/platformer/activity3.md",
+        "tutorials/platformer/activity4.md",
+        "tutorials/platformer/activity5.md",
+        "tutorials/space/activity1.md",
+        "tutorials/space/activity2.md",
+        "tutorials/space/activity3.md",
+        "tutorials/space/activity4.md",
+        "tutorials/space/activity5.md"
     ],
     "testFiles": [
     ],

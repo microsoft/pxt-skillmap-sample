@@ -54,57 +54,55 @@
 * tags: intermediate
 
 
-## map2
-* name: Second Skill Map
-* description: A single step MakeCode skillmap
+## space
+* name: Space Explorer
+* description: Let's explore the depths of space! We'll design a vessel for space travel, add some enemies, and populate the universe with planets
 
-### map2-activity1
+### space-activity1
 
-* name: Activity 1
+* name: Ship Design
 * type: tutorial
-* description: A tutorial activity that will grant an "coding" tag when completed
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/map2/activity1
-* tags: coding
+* description: Draw and code a spaceship!
+* tags: easy
+* next: space-activity2
 
-## locked
-* name: Locked 1
-* description: A map that is locked until you complete three easy tutorials
-* required: 3 easy
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity1
 
+### space-activity2
 
-
-### locked-map-activity1
-
-* name: Activity 1
+* name: Projectiles
 * type: tutorial
-* description: A tutorial activity that will grant an "coding" tag when completed
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
-* tags: coding
+* description: Customize your ship with projectiles and effects.
+* tags: easy, projectiles, kinds
+* next: space-activity3
 
-## locked2
-* name: Locked 2
-* description: A map that is locked until you complete three easy tutorials
-* required: locked
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity2
 
+### space-activity3
 
-### locked2-map-activity1
-
-* name: Activity 1
+* name: Enemies
+* description: Watch out for danger! Add enemies and lives to your game.
 * type: tutorial
-* description: A tutorial activity that will grant an "coding" tag when completed
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
-* tags: coding
+* tags: easy, enemies, kinds
+* next: space-activity4
 
-## locked3
-* name: Locked 3
-* description: A map that is locked until you complete three easy tutorials
-* required: 2 easy, 1 coding, locked
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity3
 
+### space-activity4
 
-### locked3-map-activity1
-
-* name: Activity 1
+* name: Fuel Up
 * type: tutorial
-* description: A tutorial activity that will grant an "coding" tag when completed
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/lockedmap/activity1
-* tags: coding
+* description: Use an extension to add a fuel gauge to your ship. Make sure to refuel often!
+* tags: intermediate, extensions
+* next: space-activity5
+
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity4
+
+### space-activity5
+
+* name: Planets
+* type: tutorial
+* description: Space is big and empty! Add some planets and randomized objects to fill out the environment.
+* tags: intermediate, arrays
+
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity5
