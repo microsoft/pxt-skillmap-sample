@@ -6,7 +6,7 @@
 
 ## space
 * name: Design a Space Explorer
-* description: Let's explore the depths of space! We'll design a vessel for space travel, add some enemies, and populate the universe with planets
+* description: Let's explore the depths of space! We'll design a vessel for space travel, add some enemies, and populate the universe with planets.
 
 ### space-activity1
 
@@ -60,7 +60,7 @@
 
 ## platformer
 * name: Learn to Make a Platformer
-* description: A skillmap that takes you through how to build a platformer with multiple levels
+* description: A skillmap that takes you through how to build a platformer with multiple levels.
 
 ### platformer-activity1
 
