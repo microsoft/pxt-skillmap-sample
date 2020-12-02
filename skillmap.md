@@ -16,7 +16,7 @@
 * tags: easy
 * next: space-activity2
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity1
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity1
 
 ### space-activity2
 
@@ -26,7 +26,7 @@
 * tags: easy, projectiles, kinds
 * next: space-activity3
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity2
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity2
 
 ### space-activity3
 
@@ -36,7 +36,7 @@
 * tags: easy, enemies, kinds
 * next: space-activity4
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity3
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity3
 
 ### space-activity4
 
@@ -46,7 +46,7 @@
 * tags: intermediate, extensions
 * next: space-activity5
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity4
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity4
 
 ### space-activity5
 
@@ -55,7 +55,7 @@
 * description: Space is big and empty! Add some planets and randomized objects to fill out the environment.
 * tags: intermediate, arrays
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity5
+* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity5
 
 
 ## platformer
