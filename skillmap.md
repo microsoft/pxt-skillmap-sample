@@ -17,6 +17,7 @@
 * next: space-activity2
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity1
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png
 
 ### space-activity2
 
@@ -27,6 +28,7 @@
 * next: space-activity3
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity2
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity2.png
 
 ### space-activity3
 
@@ -37,6 +39,7 @@
 * next: space-activity4
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity3
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity3.png
 
 ### space-activity4
 
@@ -47,6 +50,7 @@
 * next: space-activity5
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity4
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity4.png
 
 ### space-activity5
 
@@ -56,6 +60,7 @@
 * tags: intermediate, arrays
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity5
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity5.png
 
 
 ## platformer
