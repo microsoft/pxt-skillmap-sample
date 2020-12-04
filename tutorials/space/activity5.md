@@ -210,18 +210,4 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setFlag(SpriteFlag.StayInScreen, true)
-
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let projectile = sprites.createProjectileFromSprite(img`
-3 3 3 3 3 3 3 3
-3 . . . . . . 3
-3 . 3 3 3 3 . 3
-3 . 3 . . 3 . 3
-3 . 3 . . 3 . 3
-3 . 3 3 3 3 . 3
-3 . . . . . . 3
-3 3 3 3 3 3 3 3
-    `, mySprite, 0, -70)
-    projectile.startEffect(effects.fire);
-})
 ```

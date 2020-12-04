@@ -193,7 +193,8 @@ statusbars.onZero(StatusBarKind.Energy, function (status) {
 })
 ```
 
-```templateeffects.starField.startScreenEffect()
+```template
+effects.starField.startScreenEffect()
 let mySprite = sprites.create(img`
     . . . . . . . 9 9 . . . . . . .
     . . . . . . 9 . . 9 . . . . . .
