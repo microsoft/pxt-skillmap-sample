@@ -57,47 +57,11 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location
     game.over(false)
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
-    startNextLevel()
+    game.over(true)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     thePlayer.vy = -200
 })
-function startNextLevel () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        value.destroy()
-    }
-    if (currentLevel == 0) {
-        tiles.setTilemap(tilemap`level`)
-    } else if (currentLevel == 1) {
-        tiles.setTilemap(tilemap`level`)
-    } else {
-        game.over(true)
-    }
-    tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
-    for (let value of tiles.getTilesByType(myTiles.tile5)) {
-        newEnemy = sprites.create(img`
-            a a a a a a a a a a a a a a a a
-            a b b b b b b b b b b b b b b a
-            a b a a a a a a a a a a a a b a
-            a b a a b b a a a a b b a a b a
-            a b a a a a b a a b a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b b b b b b a a a b a
-            a b a a b a a a a a a b a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b b b b b b b b b b b b b b a
-            a a a a a a a a a a a a a a a a
-            `, SpriteKind.Enemy)
-        tiles.placeOnTile(newEnemy, value)
-        newEnemy.follow(thePlayer, 30)
-    }
-    currentLevel += 1
-}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     if (sprite.bottom < otherSprite.y) {
@@ -130,9 +94,32 @@ thePlayer = sprites.create(img`
     `, SpriteKind.Player)
 thePlayer.ay = 500
 controller.moveSprite(thePlayer, 100, 0)
+tiles.setTilemap(tilemap`level`)
+tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
 scene.cameraFollowSprite(thePlayer)
 info.setLife(3)
-startNextLevel()
+for (let value of tiles.getTilesByType(myTiles.tile5)) {
+    newEnemy = sprites.create(img`
+        a a a a a a a a a a a a a a a a
+        a b b b b b b b b b b b b b b a
+        a b a a a a a a a a a a a a b a
+        a b a a b b a a a a b b a a b a
+        a b a a a a b a a b a a a a b a
+        a b a a a a a a a a a a a a b a
+        a b a a a b a a a a b a a a b a
+        a b a a a b a a a a b a a a b a
+        a b a a a a a a a a a a a a b a
+        a b a a a a a a a a a a a a b a
+        a b a a a b b b b b b a a a b a
+        a b a a b a a a a a a b a a b a
+        a b a a a a a a a a a a a a b a
+        a b a a a a a a a a a a a a b a
+        a b b b b b b b b b b b b b b a
+        a a a a a a a a a a a a a a a a
+        `, SpriteKind.Enemy)
+    tiles.placeOnTile(newEnemy, value)
+    newEnemy.follow(thePlayer, 30)
+}
 
 
 ```
