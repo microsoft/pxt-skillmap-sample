@@ -189,6 +189,10 @@ game.onUpdateInterval(2000, function () {
 ```
 
 ```template
+namespace SpriteKind {
+    export const Gas = SpriteKind.create()
+}
+
 effects.starField.startScreenEffect()
 let mySprite = sprites.create(img`
     . . . . . . . 9 9 . . . . . . .
@@ -210,4 +214,46 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setFlag(SpriteFlag.StayInScreen, true)
+
+game.onUpdateInterval(5000, function () {
+    let fuel = sprites.createProjectileFromSide(img`
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+        5 . . . . . . . . . . . . . . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 . . 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 . 5 5 5 5 . 5
+        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . . . . . . . . . . . . . . 5
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+        `, 0, 50)
+    fuel.setKind(SpriteKind.Gas)
+    fuel.x = randint(0, 160)
+})
+
+let statusbar = statusbars.create(20, 4, StatusBarKind.Energy)
+statusbar.attachToSprite(mySprite, 3, 0)
+game.onUpdateInterval(200, function () {
+    statusbar.value += -1
+})
+
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Gas, function (sprite, otherSprite) {
+    statusbar.value = 100
+    otherSprite.destroy()
+})
+
+statusbars.onZero(StatusBarKind.Energy, function (status) {
+    game.over(false)
+})
+```
+
+```package
+pxt-status-bar=github:jwunderl/pxt-status-bar
 ```

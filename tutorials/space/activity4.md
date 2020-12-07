@@ -33,7 +33,8 @@ statusbar.attachToSprite(mySprite, 3, 0)
 ## Step 3
 Let's have the fuel go down as time passes. Drag an ``||game:on game update every||``
 block into your workspace, and place a ``||statusbars:change statusbar value by||``
-block inside. Adjust the time until the speed feels right to you.
+block inside and change the value from **0** to **-1**. Adjust the time until the
+speed feels right to you.
 
 ```blocks
 let statusbar: StatusBarSprite = null

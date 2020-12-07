@@ -70,7 +70,7 @@ controller.moveSprite(mySprite)
 
 ## Stay in screen
 
-Uh-oh, if you move off screen, your ship disappears! From ``||sprites:Sprites||``, drag the ``||sprite:set mySprite stay in screen||`` block **after** ``||variables:set mySprite to||`` and toggle the switch to **ON**. You're all set to travel the universe!
+Uh-oh, if you move off screen, your ship disappears! From ``||sprites:Sprites||``, drag the ``||sprites:set mySprite stay in screen||`` block **after** ``||variables:set mySprite to||`` and toggle the switch to **ON**. You're all set to travel the universe!
 
 ```blocks
 effects.starField.startScreenEffect()
