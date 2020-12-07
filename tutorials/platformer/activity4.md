@@ -71,7 +71,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 let newEnemy: Sprite = null
-let currentLevel = 0
 let thePlayer: Sprite = null
 scene.setBackgroundColor(11)
 thePlayer = sprites.create(img`
@@ -94,10 +93,10 @@ thePlayer = sprites.create(img`
     `, SpriteKind.Player)
 thePlayer.ay = 500
 controller.moveSprite(thePlayer, 100, 0)
-tiles.setTilemap(tilemap`level`)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
 scene.cameraFollowSprite(thePlayer)
 info.setLife(3)
+tiles.setTilemap(tilemap`level`)
+tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
     newEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
@@ -566,7 +565,7 @@ function startNextLevel () {
 Finally, we need to clean up enemies from the last level before loading the new one.
 Drag out a ``||loops: for element value of||`` block and place it at the *top* of the function (above the ``||logic: if then||``).
 
-For the list, drag out an ``||sprites:array of sprites of kind||`` from the "Arrays" category and change the kind to "Enemy".
+For the list, drag out an ``||sprites:array of sprites of kind||`` from the "Arrays" category and change the kind to "Enemy". You'll need to remove the array block from the ``||variables:set variable||`` block (see the hint for what the code should look like).
 
 ```blocks
 let newEnemy: Sprite = null

@@ -237,7 +237,7 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
 ## Spawning enemies pt. 3
 Our enemies are spawning now, but they are in the wrong location.
 We need to place them on top of the tile that is stored in the "value" variable.
-Drag out a ``||scene: place sprite on top of location||`` block and place it in the loop.
+Drag out a ``||scene: place sprite on top of tilemap col row||`` block and place it in the loop.
 Change the sprite to be "newEnemy" and drag "value" out of the loop and place it as the location.
 
 ```blocks
