@@ -62,6 +62,14 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     thePlayer.vy = -200
 })
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    if (sprite.bottom < otherSprite.y) {
+        sprite.vy = -100
+    } else {
+        info.changeLifeBy(-1)
+    }
+})
 let newEnemy: Sprite = null
 let thePlayer: Sprite = null
 scene.setBackgroundColor(11)
@@ -109,7 +117,7 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         `, SpriteKind.Enemy)
     newEnemy.ay = 500
     tiles.placeOnTile(newEnemy, value)
-    newEnemy.setVelocity(-30, 0)
+    newEnemy.vx = -30
 }
 ```
 
@@ -172,8 +180,8 @@ Let's add some code for our first rule:
 > *If the enemy hits a wall, it will turn around*
 
 First, we need to detect if our enemy is hitting a wall.
-We'll use an ``||logic:if then||`` block to run some code only if that condition is met.
-Drag out an ``||logic:if then||`` block and place it inside of our loop.
+We'll use an ``||logic:if true||`` block to run some code only if that condition is met.
+Drag out an ``||logic:if true||`` block and place it inside of our loop.
 
 ```blocks
 game.onUpdate(function () {
@@ -187,18 +195,17 @@ game.onUpdate(function () {
 ## Wall bouncing pt. 2
 
 To check if the enemy is hitting a wall, we can use the ``||scene: sprite is hitting wall left||`` block.
-Drag that block into the condition for the ``||logic:if then||``.
+Drag that block into the condition for the ``||logic:if true||``.
 For the first argument, drag the "value" from the loop and place it on top of the sprite variable.
-For the second, select the direction "left".
 
-Inside the ``||logic:if then||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vx (velocity x)" and the value to 30.
+Inside the ``||logic:if true||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vx (velocity x)" and the value to 30.
 For the sprite argument, drag out another "value" from the loop and place it on top.
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         }
     }
 })
@@ -207,7 +214,7 @@ game.onUpdate(function () {
 ## Wall bouncing pt. 3
 
 Now let's handle if the enemy is moving *right*.
-Press the "+" button on ``||logic:if then||`` twice to add an "else if" condition.
+Press the "+" button on ``||logic:if true||`` twice to add an "else if" condition.
 Now drag out the same blocks as you did for left, but this time select "right" and change the "vx (velocity x)" to be -30.
 
 Take a look at your game! The enemies should be bouncing left and right.
@@ -216,9 +223,9 @@ Take a look at your game! The enemies should be bouncing left and right.
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         }
         else {
         }
@@ -233,16 +240,16 @@ Let's take a look at our second rule
 > *If the enemy is walking towards a wall, it will try to jump over it*
 
 For this rule, we're first goint to need to make sure our enemy is on the ground.
-Press the "+" button on ``||logic:if then||`` to add an "else if" condition.
+Press the "+" button on ``||logic:if true||`` to add an "else if" condition.
 Place another ``||scene: sprite is hitting wall left||`` block inside the condition and change the variable to "value" and the direction to "bottom".
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
         }
         else {
@@ -254,15 +261,15 @@ game.onUpdate(function () {
 ## Jumping pt. 2
 
 Once again, we need to check both directions that the enemy can be walking.
-Drag out another ``||logic:if then||`` and place it inside of the "is hitting wall bottom" check.
+Drag out another ``||logic:if true||`` and place it inside of the "is hitting wall bottom" check.
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (false) {
             }
@@ -281,15 +288,15 @@ To check if the enemy is approaching a wall in a direction, we need to check two
 2. Is the next tile in that direction a wall
 
 Because we have two things to check, we'll use an ``||logic:and||`` block.
-Drag one out and place it in the condition for the ``||logic:if then||``.
+Drag one out and place it in the condition for the ``||logic:if true||``.
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (false && false) {
             }
@@ -310,9 +317,9 @@ Change the variable to be the "value" from the loop.
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && false) {
             }
@@ -331,9 +338,9 @@ Change the variable to be the "value" from the loop and the tile to be the groun
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
             }
@@ -344,16 +351,16 @@ game.onUpdate(function () {
 
 ## Jumping pt. 6
 
-Inside the ``||logic:if then||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vy (velocity y)" and the value to -150.
+Inside the ``||logic:if true||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vy (velocity y)" and the value to -150.
 For the sprite argument, drag out another "value" from the loop and place it on top.
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
                 value.vy = -150
@@ -367,16 +374,16 @@ game.onUpdate(function () {
 ## Jumping pt. 7
 
 Great! Now our enemies will jump when they are heading to the left.
-To make this also work for the right, add an "else if" condition to the ``||logic:if then||`` and drag out the same blocks as before.
+To make this also work for the right, add an "else if" condition to the ``||logic:if true||`` and drag out the same blocks as before.
 This time, change "left" to "right" and "<" to ">".
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         if (value.isHittingTile(CollisionDirection.Left)) {
-            value.setVelocity(30, 0)
+            value.vx = 30
         } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.setVelocity(-30, 0)
+            value.vx = -30
         } else if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
                 value.vy = -150
