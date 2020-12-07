@@ -62,9 +62,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 Time for some special effects! From ``||sprites:Sprites||``, drag the
 ``||sprites:mySprite start effects||`` block **after**
-``||variables:projectile from mySprite||``. Click on the dropdown and try out
-some different effects! You can also use this block to set an effect on your
-spaceship.
+``||variables:projectile from mySprite||``. Make sure you change the variable
+from ``||variables:mySprite||`` to ``||variables:projectile||``, then click on
+the dropdown and try out some different effects! You can also use this block
+to set an effect on your spaceship.
 
 ```blocks
 let mySprite: Sprite = null
