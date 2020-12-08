@@ -85,6 +85,7 @@ let thePlayer = sprites.create(img`
 Now we need to get the player Sprite moving.
 Drag out a ``||controller:move sprite with buttons||``
 block and place it at the end of ``||loops:on start||``.
+Change the variable name from "mySprite" to "thePlayer".
 Press the plus button and change the vy argument to 0.
 
 ```blocks
@@ -120,6 +121,7 @@ In MakeCode Arcade, positive y values are in the *down* direction.
 We'll be setting the acceleration y to be positive so that the sprite will fall down.
 
 Drag out a ``||sprites:set sprite x to||`` block and place it at the end of ``||loops:on start||``.
+Change the variable name from "mySprite" to "thePlayer".
 Change the dropdown to ay (acceleration y) and set the value to 500.
 
 
@@ -166,6 +168,7 @@ To make the player jump, we want to set their velocity so that they travel upwar
 That means we want to give them a *negative* velocity y.
 
 Drag out a ``||sprites:set sprite x to||`` block and place it inside of ``||controller:on A button pressed||``.
+Change the variable name from "mySprite" to "thePlayer".
 Change the dropdown to vy (velocity y) and set the value to -200.
 
 ```blocks
