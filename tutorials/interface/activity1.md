@@ -4,7 +4,7 @@
 
 ## Introduction @unplugged
 
-![Psyched Monkey](https://github.com/microsoft/pxt-arcade/blob/master/docs/static/tutorials/monkey.png?raw=true "Psyched Monkey is Ready!" )
+![Psyched Monkey](/tutorials/monkey.png "Psyched Monkey is Ready!" )
 
 *Are you ready to start coding your own games?* 
 
@@ -201,7 +201,7 @@ Parameter blocks are special pieces that add information to other
 blocks. Sometimes they're pointy, sometimes they're rounded,
 but they always need another block to snap into. Parameter blocks look something like this:
 
-
+![Parameter Blocks](/tutorials/parameter-blocks.png "This is what the shape of a parameter block looks like" )
 
 <hr/>
 **Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
