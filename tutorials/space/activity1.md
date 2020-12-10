@@ -27,7 +27,7 @@ effects.starField.startScreenEffect()
 
 Drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
 block from the ``||sprites:Sprites||`` category and place it 
-at the end of the ``||loops:on start|`` container.
+at the end of the ``||loops:on start||`` container.
 <hr/>
 Click on the grey box in the middle of your
  ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
