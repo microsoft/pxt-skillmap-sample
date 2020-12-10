@@ -8,7 +8,6 @@
     "files": [
         "README.md",
         "skillmap.md",
-        "_locales/fr/skillmap.md",
         "tutorials/platformer/activity1.md",
         "tutorials/platformer/activity2.md",
         "tutorials/platformer/activity3.md",
