@@ -66,7 +66,7 @@ let mySprite = sprites.create(img`
 🌟 Let's get your ship moving 🌟
 
 Find the ``||controller:move [mySprite] with buttons ⊕||`` block 
-and drag it into the bottom of the ``||loops:on start|`` container. 
+and drag it into the bottom of the ``||loops:on start||`` container. 
 
 Now your ship will move with the joystick or the WASD keys.
 Try moving your ship around in the simulator!
