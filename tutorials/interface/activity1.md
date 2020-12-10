@@ -105,11 +105,11 @@ are both red, but they live inside the ``||sprites:Sprites||`` category.
 
 <hr/>
 
-**Try:** Bring a ``||variables:set my sprite to [ ] of kind [player]||`` into the ``||loops:on start||`` block and 
+**Try:** Bring a ``||variables:set [my sprite] to [ ] of kind [player]||`` into the ``||loops:on start||`` block and 
 play around with it until your [*sprite*](#sprote "A 2-D image that moves on the screen") shows on the screen.
 
->>*Tip: Drag the ``||game:splash "___"||`` out of the ``||loops:on start||`` block in the workspace
-and drop it back into the toolbox to delete it so that your sprite will be revealed!
+>>*Tip: Drag the ``||game:splash "___"||`` out of the ``||loops:on start||`` block
+and drop it back into the toolbox to delete it so your sprite will be revealed!
 
 #### ~ tutorialhint
 ```blocks
@@ -149,7 +149,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 <hr/>
 **Try:** Find an ``||controller:on [A] button pressed ||`` container 
-block and drag it into the workspace. You can add to it in the next step.
+block and drag it into the workspace. You will add to it in the next step.
 
 #### ~ tutorialhint
 
@@ -162,6 +162,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ## Standard Blocks
 
 ```ghost
+let mySprite: Sprite = null;
 mySprite.startEffect(effects.spray)
 ```
 
@@ -174,6 +175,7 @@ to bottom within the container that they're placed.
 Here is an example of a standard block:
 
 ```block
+let mySprite: Sprite = null;
 mySprite.startEffect(effects.spray)
 ```
 
@@ -183,6 +185,8 @@ block and drag it into ``||controller:on [A] button pressed ||``, then choose yo
 
 #### ~ tutorialhint
 ```blocks
+let mySprite: Sprite = null;
+
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.startEffect(effects.confetti)
 })
@@ -197,9 +201,7 @@ Parameter blocks are special pieces that add information to other
 blocks. Sometimes they're pointy, sometimes they're rounded,
 but they always need another block to snap into. Parameter blocks look something like this:
 
-```block
-true
-```
+
 
 <hr/>
 **Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
