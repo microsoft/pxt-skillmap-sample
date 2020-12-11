@@ -4,7 +4,7 @@
 * infoUrl: /docs/educator-info
 
 
-<!-- ## interface
+## interface
 * name: Learn to use MakeCode Arcade
 * description: This will teach you how to complete tutorials in Microsoft MakeCode Arcade.
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/design-a-space-explorer.pdf
@@ -17,7 +17,7 @@
 * tags: easy
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/interface/activity1
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png -->
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png
 
 ## space
 * name: Design a Space Explorer
