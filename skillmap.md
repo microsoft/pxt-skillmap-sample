@@ -16,7 +16,8 @@
 * description: Intro to our tutorial cards
 * tags: easy
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/interface/activity1
+// url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/interface/activity1
+* url: https://github.com/kiki-lee/pxt-skillmap-mess/tutorials/interface/activity1
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png
 
 ## space
