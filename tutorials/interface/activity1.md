@@ -71,7 +71,8 @@ Blocks can be dragged out from the toolbox, connected, duplicated, and deleted.
 
 Keep going to learn more about blocks.
 
-![Block Animation](https://raw.githubusercontent.com/microsoft/pxt-arcade/master/docs/static/tutorials/use_blocks.gif "Blocks appear, duplicate, and delete." )
+![Block Animation](/tutorials/use_blocks.gif "Blocks appear, duplicate, and delete." )
+
 
 
 ## Your Toolbox
