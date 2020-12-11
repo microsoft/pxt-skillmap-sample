@@ -4,7 +4,7 @@
 
 ## Introduction @unplugged
 
-![Psyched Monkey](/static/tutorials/interface/monkey.png "Psyched Monkey is Ready!" )
+![Psyched Monkey](/img/interface/monkey.png "Psyched Monkey is Ready!" )
 
 *Are you ready to start coding your own games?* 
 
@@ -71,7 +71,7 @@ Blocks can be dragged out from the toolbox, connected, duplicated, and deleted.
 
 Keep going to learn more about blocks.
 
-![Block Animation](/static/tutorials/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
+![Block Animation](/img/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
 
 
 
@@ -202,7 +202,7 @@ Parameter blocks are special pieces that add information to other
 blocks. Sometimes they're pointy, sometimes they're rounded,
 but they always need another block to snap into. Parameter blocks look something like this:
 
-![Parameter Blocks](/static/tutorials/interface/parameter-blocks.png "This is what the shape of a parameter block looks like" )
+![Parameter Blocks](/img/interface/parameter-blocks.png "This is what the shape of a parameter block looks like" )
 
 <hr/>
 **Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
