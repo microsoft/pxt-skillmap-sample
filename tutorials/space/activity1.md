@@ -6,7 +6,7 @@ Let's explore the depths of space!
 
 In this tutorial, you'll design a spaceship for your journey.
 
-![Flying through space](/static/tutorials/space/space1.gif "Blasting through a starfield" )
+![Flying through space](/img/space/space1.gif "Blasting through a starfield" )
 
 ## Set the scene
 
