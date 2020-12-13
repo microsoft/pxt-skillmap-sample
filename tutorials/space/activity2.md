@@ -27,11 +27,18 @@ kind of vehicle OR turn it into an alien creature floating through space! 👽
 🔲 Drag an ``||controller:on [A] button pressed ||`` container into the workspace, 
 
 🔲 Snap a <br/>
-``||variables:set [projectile] to||`` ``||sprites:[ ] projectile from [mySprite] with vx [50] vy [50]||`` 
+``||variables:set [projectile] to||`` ``||sprites:projectile [ ] from [mySprite] with vx [50] vy [50]||`` 
 block inside of it.
 
-🔲 Click on the grey box inside of the new projectile block to draw your object (or select one from the gallery.)
+🔲 Click on the grey box inside of the new projectile block to draw your 
+flying object (or select one from the gallery.)
 <hr/>
+### ~tip
+
+#### Tip Title
+[content]
+
+### ~
 >>*Tip: Run your code in the simulator and launch a few projectiles 
 by pressing the ![The A Button](/img/space/a-button.png "Let's get fired up!") button.  What happens?
 
@@ -44,10 +51,11 @@ let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 
 ## Create a projectile
 
-You've probably noticed that your projectiles are firing at the bottom right corner.
-This is *not* helpful when your enemies are coming from above!  Let's change it.
+You've probably noticed that your projectiles are firing toward the bottom 
+right corner. This is *not helpful* when your enemies are coming from above! Let's take 
+a second to figure out what's happening.
 <hr/>
-value to `0` and the ``||sprites:vy||`` to `-70`.
+The ``||variables:set projectile to||`` block comes preloaded with  value to `0` and the ``||sprites:vy||`` to `-70`.
 
 ```blocks
 let mySprite: Sprite = null
