@@ -2,14 +2,24 @@
 
 ## Introduction @unplugged
 
-Now let's customize your ship! You can fire a projectile when the **A** button
-is pressed, or add effects while your ship is moving.
+![Releasing projectiles](/img/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?" )
+
+Are you ready to customize your ship? 
+
+In this tutorial, you'll learm to fire a projectile when the **A** button
+is pressed and add your own special effects.
 
 ## Customize sprites
 
-We've started you off with some code, but you can customize the sprites however
-you want: design a new kind of vehicle, or an alien creature floating through
-the depths of space!
+The workspace is pre-loaded with code for a flying ship.
+
+It's up to you to customize the sprite and make it your own. You could design a new 
+kind of vehicle, or turn it into an alien creature floating through space!
+
+<hr/>
+
+>>*Tip: Remember, to edit a sprite, click inside the grey square where the sprite lives.
+![Edit the sprite](/img/space/edit-sprite.png "Click within the square. I dare you!")
 
 ## Add a button event
 
