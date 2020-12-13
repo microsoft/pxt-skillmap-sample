@@ -15,6 +15,7 @@ The workspace is pre-loaded with code that simulates a flying ship.
 
 It's up to you to customize the sprite and make it your own. You could design a new 
 kind of vehicle OR turn the sprite into an alien creature floating through space! 👽
+
 <hr/>
 
 >>*Tip: Remember, to edit a sprite, click inside the grey square where the sprite lives.
