@@ -14,7 +14,7 @@ is pressed and add your own special effects.
 The workspace is pre-loaded with code that simulates a flying ship.
 
 It's up to you to customize the sprite and make it your own. You could design a new 
-kind of vehicle, or turn it into an alien creature floating through space!
+kind of vehicle OR turn the sprite into an alien creature floating through space! 👽
 
 <hr/>
 
