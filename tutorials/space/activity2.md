@@ -13,28 +13,40 @@ is pressed and add your own special effects.
 
 The workspace is pre-loaded with code for a flying ship.
 
-It's up to you to customize the sprite and make it your own. You could design a new 
+It's up to you to customize the [*sprite*](#sprote "A 2-D image that moves on the screen") and make it your own. You could design a new 
 kind of vehicle OR turn it into an alien creature floating through space! 👽
 
 <hr/>
 
->>*Tip: Remember, to edit a sprite, click inside the grey square where the sprite lives.
+>>*Tip: Remember, to edit a sprite, click inside the grey square where your current sprite is displayed.
+
 ![Edit the sprite](/img/space/edit-sprite.png "Click within the square. I dare you!")
 
 ## Add a button event
 
-Find ``||controller:on A button pressed||`` in ``||controller:Controller||`` and drag it into the workspace.
+🔲 Drag an ``||controller:on [A] button pressed ||`` container into the workspace, 
+
+🔲 Snap a <br/>
+``||variables:set [projectile] to||`` ``||sprites:[ ] projectile from [mySprite] with vx [50] vy [50]||`` 
+block inside of it.
+
+🔲 Click on the grey box inside of the new projectile block to draw your object (or select one from the gallery.)
+<hr/>
+>>*Tip: Run your code in the simulator and launch a few projectiles 
+by pressing the ![The A Button](/img/space/a-button.png "Let's get fired up!") button.  What happens?
+
 
 ```blocks
-// @highlight
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 })
 ```
 
 ## Create a projectile
 
-From ``||sprites:Sprites||`` drag ``||variables:projectile from mySprite||``
-into the ``||controller:on A button pressed||``. Set the ``||sprites:vx||``
+You've probably noticed that your projectiles are firing at the bottom right corner.
+This is *not* helpful when your enemies are coming from above!  Let's change it.
+<hr/>
 value to `0` and the ``||sprites:vy||`` to `-70`.
 
 ```blocks
