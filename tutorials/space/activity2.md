@@ -2,7 +2,7 @@
 
 ## Introduction @unplugged
 
-![Releasing projectiles](/img/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?" )
+![Releasing projectiles](/img/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?")
 
 Are you ready to customize your ship? 
 
@@ -70,6 +70,7 @@ you need to change the
 - vertically (in the [__*y*__](#whatY "position from top to bottom") space) by changing the __vy__  
 - or both
 
+![Directional Projectiles](/img/space/vxvy.gif "Round and Round")
 
 
 
