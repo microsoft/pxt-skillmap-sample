@@ -13,7 +13,7 @@ is pressed and add your own special effects.
 
 The workspace is pre-loaded with code for a flying ship.
 
-It's up to you to customize the [*sprite*](#sprote "A 2-D image that moves on the screen") and make it your own. You could design a new 
+It's up to you to customize the [__*sprite*__](#sprote "2-D image that moves on the screen") and make it your own. You could design a new 
 kind of vehicle OR turn it into an alien creature floating through space! 👽
 
 <hr/>
@@ -33,12 +33,7 @@ block inside of it.
 🔲 Click on the grey box inside of the new projectile block to draw your 
 flying object (or select one from the gallery.)
 <hr/>
-### ~tip
 
-#### Tip Title
-[content]
-
-### ~
 >>*Tip: Run your code in the simulator and launch a few projectiles 
 by pressing the ![The A Button](/img/space/a-button.png "Let's get fired up!") button.  What happens?
 
@@ -49,13 +44,36 @@ let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 })
 ```
 
-## Create a projectile
+## Retrospect @unplugged
 
-You've probably noticed that your projectiles are firing toward the bottom 
+You probably noticed that your projectiles are firing toward the bottom 
 right corner. This is *not helpful* when your enemies are coming from above! Let's take 
 a second to figure out what's happening.
 <hr/>
-The ``||variables:set projectile to||`` block comes preloaded with  value to `0` and the ``||sprites:vy||`` to `-70`.
+The ``||variables:set projectile to||`` block comes preloaded with 
+an [__*argument*__](#argue "extra chunk of information that the block needs") 
+that sets both the [__*vx*__](#whatVX "horizontal velocity") 
+and [__*vy*__](#whatVY "vertical velocity") 
+values to 50.
+
+```block
+let mySprite: Sprite = null
+let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
+```
+
+## Learn Velocity @unplugged
+
+To change the direction of your projectiles,  
+you need to change the 
+[__*velocity*__](#veloc "speed in a given direction") of the object either:  
+- horizontally (in the [__*x*__](#whatX "position from left to right") space) by changing the __vx__  
+- vertically (in the [__*y*__](#whatY "position from top to bottom") space) by changing the __vy__  
+- or both
+
+
+
+
+## Create a projectile
 
 ```blocks
 let mySprite: Sprite = null
@@ -64,6 +82,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 0, -70)
 })
 ```
+
 
 ## Draw your projectile
 
