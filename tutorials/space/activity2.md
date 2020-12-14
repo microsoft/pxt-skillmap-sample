@@ -40,7 +40,17 @@ by pressing the ![The A Button](/img/space/a-button.png "Let's get fired up!") b
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
+let projectile = sprites.createProjectileFromSprite(img`
+3 3 3 3 3 3 3 3
+3 . . . . . . 3
+3 . 3 3 3 3 . 3
+3 . 3 . . 3 . 3
+3 . 3 . . 3 . 3
+3 . 3 3 3 3 . 3
+3 . . . . . . 3
+3 3 3 3 3 3 3 3
+    `, mySprite, 50, 50)
+})
 })
 ```
 
@@ -63,33 +73,20 @@ let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 
 ## Learn Velocity @unplugged
 
-To change the direction of your projectiles,  
-you need to change the 
-[__*velocity*__](#veloc "speed in a given direction") of the object either:  
-- horizontally (in the [__*x*__](#whatX "position from left to right") space) by changing the __vx__  
-- vertically (in the [__*y*__](#whatY "position from top to bottom") space) by changing the __vy__  
-- or both
+To change the direction of the projectiles, you need to change the  
+speed they travel in a certain direction.  
+In MakeCode Arcade, we call that the [__*velocity*__](#veloc "speed in a given direction").
+
+- Change whether they fly left or right by changing the [__*vx*__](#whatX "speed from left to right")  
+- Change whether they fly up or down by changing the [__*vy*__](#whatX "speed from top to bottom")  
+- What happens when you change both?
 
 ![Directional Projectiles](/img/space/vxvy.gif "Round and Round")
 
 
-
 ## Create a projectile
 
-```blocks
-let mySprite: Sprite = null
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    // @highlight
-    let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 0, -70)
-})
-```
-
-
-## Draw your projectile
-
-Click on the grey square to open the image editor and draw your projectile.
-Try shooting the projectile in the simulator using your keyboard or click
-the **A** button.
+Play with the __vx__ and __vy__ values of the projectile until they're flying straight up at a decent speed.
 
 ```blocks
 let mySprite: Sprite = null
@@ -110,12 +107,20 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## Custom effects
 
-Time for some special effects! From ``||sprites:Sprites||``, drag the
-``||sprites:mySprite start effects||`` block **after**
-``||variables:projectile from mySprite||``. Make sure you change the variable
-from ``||variables:mySprite||`` to ``||variables:projectile||``, then click on
-the dropdown and try out some different effects! You can also use this block
-to set an effect on your spaceship.
+💥 Now for some special effects 💥
+
+Find 
+``||sprites:[mySprite] start [spray] effect||`` and snap it in at 
+the bottom of the ``||controller:on [A] button pressed ||`` container.
+
+- Change variable ``||variables:mySprite||`` to ``||variables:projectile||`` if you
+want the effects on your projectiles instead of on your ship.
+- Try different options from the ``||sprites:[spray]||`` dropdown menu and choose the one you like best!
+- You can add another ``||sprites:[mySprite] start [spray] effect||`` block
+to set a separate effect on your spaceship
+<hr/>
+
+Congrats! Now you're ready to move to the next tutorial.
 
 ```blocks
 let mySprite: Sprite = null
@@ -134,6 +139,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile.startEffect(effects.fire);
 })
 ```
+
 
 ```template
 effects.starField.startScreenEffect()
