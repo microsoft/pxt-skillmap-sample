@@ -2,13 +2,24 @@
 
 ## Introduction @unplugged
 
-Space travel is dangerous, so let's add some enemies for your ship to avoid.
-These could be asteroids or debris or angry space sharks!
+Intergalactic travel is dangerous!
+
+Let's add some enemies for your ship to avoid.  
+These could be asteroids, radioactive debris, or angry space sharks!
+
+![Releasing projectiles](/img/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?")
+
 
 ## Step 1
 
-Add an ``||game:on game update every||`` block to the workspace and change
-the number in the block to **1000**
+Feel like making enemies rain from the sky?
+
+Let's add some code that will drop an enemy toward the ship every second or so.
+<hr/> 
+🔲 Add an ``||game:on game update every [500] ms||`` container to the workspace  
+🔲 Change the last argument to **1000** [__*ms*__](#millis "milliseconds...aka 1/1000 of a second") 
+(or pick **1 second** from the dropdown)    
+<br/>
 
 ```blocks
 game.onUpdateInterval(1000, function () {
@@ -17,11 +28,44 @@ game.onUpdateInterval(1000, function () {
 
 ## Step 2
 
-Inside the ``||game:on game update every||`` event, place a
-``||variables:set projectile to||`` ``||sprites:projectile from side||`` block.
-Rename the variable to ``||variables:myEnemy||`` and change the
-``||sprites:vx||`` value to **0**. Click on the grey square to open the sprite
-editor and draw an image for the enemy.
+🔲 Find the
+``||variables:set [projectile2] to||`` ``||sprites:projectile [ ] from side with vx [50] vy [50]||`` block near the bottom of the ``||sprites:Sprites||`` category
+and drag it into the ``||game:on game update every [1000] ms||`` container.  
+🔲 Click on the ``||variables:[projectile2]||`` argument inside the new block and 
+select "Rename variable..."  
+🔲 Change the variable name to ``||variables:myEnemy||`` so we know these are the baddies.  
+
+```blocks
+let myEnemy: Sprite = null
+game.onUpdateInterval(1000, function () {
+    // @highlight
+    myEnemy = sprites.createProjectileFromSide(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        `, 50, 50)
+})
+```
+
+## Step 2.5
+
+🔲 Click the grey square inside the new block to design your enemy (or choose one from the gallery).  
+🔲 Play with the **vx** and **vy** values until 
+your new sprites are falling straight down the side of the screen. 
+
 
 ```blocks
 let myEnemy: Sprite = null
