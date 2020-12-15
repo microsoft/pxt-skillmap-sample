@@ -2,39 +2,75 @@
 
 ## Introduction @unplugged
 
-Time to refuel! In this tutorial you will add a fuel bar to your spaceship
-that goes down as you travel. Make sure to pick up powerups to keep your
+Time to refuel! 
+
+In this tutorial we'll add a fuel bar to your spaceship
+that depleats as you travel. 
+
+Make sure to catch the powerups to keep your
 ship from breaking down!
 
-We will be using the **Status Bar Extension** in this tutorial. An extension
-is an extra set of blocks that can be added to a project. You can browse other
-extensions by clicking on ``||images:Extensions||`` under the
-**Advanced** category in the editor.
+![Fuel Up!](/img/space/eat-gas.gif "Is it raining...tacos?")
+
 
 ## Step 1
-From ``||statusbars:Status Bars||``, drag a ``||variables:set statusbar to||``
-``||statusbars:create status bar sprite||`` block into your ``||loops:on start||``.
-Set the kind to **Energy**.
+😵 The starter code is taking up a lot of room! 
+Don't worry, the Arcade workspace will expand for you. Just scroll up and
+over (or down and over) to keep building.
+<hr/>
+
+🔲 Take a peek into the new ``||statusbars:Status Bars||`` category.
+You'll find ``||variables:set [statusbar] to create status bar sprite width [20] height [4] kind [Health]||``.
+Drag one to the end of the ``||loops:on start||`` container.
+
+🔲 To keep track of how much *gas* is left, set the argument for 
+**statusbar** kind to **Energy**.
+<hr/>
+>> *Tip: The ``||statusbars:Status Bars||`` category is an 
+[__extension__](#extendo "a category that provides extended capabilites to MakeCode"). 
+To see what else you can do using extensions, 
+click ``||statusbars:˅ Advanced||`` and choose ``||extension:Extensions||``*
 
 ```block
 let statusbar = statusbars.create(20, 4, StatusBarKind.Energy)
 ```
 
 ## Step 2
-Use the ``||statusbars:attach statusbar to mySprite||`` block to attach the
-status bar to your ship. You can click the **plus icon** to change the position
-of the status bar.
+If we want the status bar to show the details of **mySprite**, we'll need to link the two together.
+<hr/>
+
+🔲 Drop ``||statusbars:attach [statusbar] to [mySprite] ⊕||`` 
+into the end of the ``||loops:on start||`` container.
+
+🔲 Click ⊕ on the new block to reveal options
+ to change the position of the status bar in relation to **mySprite**. 
+ Can you figure out how to get the bar to show up *below* your ship?
+
+<br/>
 
 ```block
 let statusbar = statusbars.create(20, 4, StatusBarKind.Energy)
-statusbar.attachToSprite(mySprite, 3, 0)
+// @highlight
+statusbar.attachToSprite(mySprite, -25, 0)
 ```
 
 ## Step 3
-Let's have the fuel go down as time passes. Drag an ``||game:on game update every||``
-block into your workspace, and place a ``||statusbars:change statusbar value by||``
-block inside and change the value from **0** to **-1**. Adjust the time until the
-speed feels right to you.
+⏰ The longer you're in the air, the more fuel you use ⏰  
+
+Here's how to make the fuel go down as time passes. 
+<hr/>
+🔲 Drag an ``||game:on game update every [500] ms||`` container into the 
+workspace. Adjust the time argument to 300 ms.
+
+🔲 Drop a ``||statusbars:change [statusbar] [value] by [0]||``
+block into the **game update** container.
+
+🔲 Change the amount the status bar changes from **0** to **-1**. 
+<hr/>
+
+>> *Tip: Remember this step later. If the fuel runs out too fast in 
+gameplay, you can come back and adjust these blocks.*
+
 
 ```blocks
 let statusbar: StatusBarSprite = null
@@ -195,6 +231,29 @@ statusbars.onZero(StatusBarKind.Energy, function (status) {
 ```
 
 ```template
+
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    let projectile = sprites.createProjectileFromSprite(img`
+3 3 3 3 3 3 3 3
+3 . . . . . . 3
+3 . 3 3 3 3 . 3
+3 . 3 . . 3 . 3
+3 . 3 . . 3 . 3
+3 . 3 3 3 3 . 3
+3 . . . . . . 3
+3 3 3 3 3 3 3 3
+    `, mySprite, 0, -70)
+    projectile.startEffect(effects.ashes)
+})
+sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
+    sprite.destroy(effects.bubbles, 500)
+    otherSprite.destroy(effects.smiles, 500)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    info.changeLifeBy(0)
+    otherSprite.destroy(effects.disintegrate, 500)
+})
+let myEnemy: Sprite = null
 effects.starField.startScreenEffect()
 let mySprite = sprites.create(img`
     . . . . . . . 9 9 . . . . . . .
@@ -216,6 +275,29 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setFlag(SpriteFlag.StayInScreen, true)
+game.onUpdateInterval(500, function () {
+    myEnemy = sprites.createProjectileFromSide(img`
+        2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+        2 . . . . . . . . . . . . . . 2
+        2 . 2 2 2 2 2 2 2 2 2 2 2 2 . 2
+        . 2 . 2 2 2 . . . . 2 2 2 . 2 .
+        . 2 . 2 2 2 . 2 2 2 2 2 2 . 2 .
+        . . 2 . 2 2 . . . 2 2 2 . 2 . .
+        . . 2 . 2 2 . 2 2 2 2 2 . 2 . .
+        . . . 2 . 2 . . . . 2 . 2 . . .
+        . . . 2 . 2 2 2 2 2 2 . 2 . . .
+        . . . . 2 . 2 2 2 2 . 2 . . . .
+        . . . . 2 . 2 2 2 2 . 2 . . . .
+        . . . . . 2 . 2 2 . 2 . . . . .
+        . . . . . 2 . 2 2 . 2 . . . . .
+        . . . . . . 2 . . 2 . . . . . .
+        . . . . . . 2 . . 2 . . . . . .
+        . . . . . . . 2 2 . . . . . . . 
+        `, 0, 50)
+    myEnemy.x = randint(5, 155)
+    myEnemy.setKind(SpriteKind.Enemy)
+})
+
 ```
 
 ```ghost
