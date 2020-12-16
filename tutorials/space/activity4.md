@@ -74,27 +74,36 @@ gameplay, you can come back and adjust these blocks.*
 
 ```blocks
 let statusbar: StatusBarSprite = null
-game.onUpdateInterval(200, function () {
+game.onUpdateInterval(300, function () {
     statusbar.value += -1
 })
 ```
 
 ## Step 4
-Now we'll add some fuel to the game. These could be gas canisters, or energy
-crystals, or juicy hamburgers, depending on what kind of vehicle you have.
-Drag out an ``||game:on game update every||`` block and change the interval
-to **5000**.
+⛽ Time to refuel ⛽
 
-```blocks
-game.onUpdateInterval(5000, function () {
-})
-```
+You can drop gas canisters, energy crystals, or juicy hamburgers...whatever 
+makes sense for the vessel you have.
 
-## Step 5
-Place a ``||variables:set projectile to||`` ``||sprites:projectile from side||``
-block in the ``||game:on game update every||``. Rename the variable to
-``||variables:fuel||`` and change the ``||sprites:vx||`` value to **0**. Click
-on the grey square and draw your refuel item.
+The code for dropping fuel is a lot like the code for dropping enemies. 
+For a refresher on how things work, find the **myEnemy** blocks in the
+workspace and use them as a guide.
+<hr/>
+🔲 Drag a _new_  ``||game:on game update every [500] ms||`` container 
+into the workspace and change the interval to **5 seconds (5000 ms)**.
+
+🔲 Snap a
+``||variables:set [projectile2] to||`` ``||sprites:projectile [ ] from side with vx [50] vy [50]||``
+block inside the newest **on game update** container.
+
+🔲 Click ``||variables:[projectile2]||`` and rename the sprite ``||variables:[fuel]||``.
+
+🔲 Click on the grey square to bring up the sprite editor so you can
+draw a fuel sprite (or choose one from the gallery.) 
+
+🔲 Play with the **vx** and **vy** arguments of the fuel until it's falling
+straight down at a decent speed.
+
 
 ```blocks
 game.onUpdateInterval(5000, function () {
@@ -118,44 +127,7 @@ game.onUpdateInterval(5000, function () {
         `, 0, 50)
 })
 ```
-
-
 ## Step 5
-
-Place a ``||sprites:set||`` ``||variables:mySprite||`` ``||sprites:kind to||``
-block right below the ``||variables:set fuel to||`` ``||sprites:projectile||``
-block and change the variable to ``||variables:fuel||``. Select
-``||sprites:Add a new kind...||`` from the dropdown and type **Gas**.
-
-```blocks
-namespace SpriteKind {
-    export const Gas = SpriteKind.create()
-}
-
-game.onUpdateInterval(5000, function () {
-    let fuel = sprites.createProjectileFromSide(img`
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
-        5 . . . . . . . . . . . . . . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
-        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 . 5 . . 5 5 5 5 . 5
-        5 . 5 5 5 5 . 5 5 . 5 5 5 5 . 5
-        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
-        5 . . . . . . . . . . . . . . 5
-        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
-        `, 0, 50)
-    fuel.setKind(SpriteKind.Gas)
-})
-```
-
-## Step 6
 Place a ``||sprites:set mySprite x||`` block below the ``||variables:set myEnemy to||``
 ``||sprites:projectile||`` block. Change the variable to ``||variables:myEnemy||``,
 then put a ``||Math:pick random 0 to 10||`` in ``||sprites:set mySprite x||``
@@ -185,10 +157,53 @@ game.onUpdateInterval(5000, function () {
         5 . . . . . . . . . . . . . . 5
         5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
         `, 0, 50)
-    fuel.setKind(SpriteKind.Gas)
-    fuel.x = randint(0, 160)
+        // @highlight
+    fuel.x = randint(0, 160)   
 })
 ```
+
+## Step 6
+
+Now we need to put our fuel sprite into the _gas_ class.
+<hr/>
+🔲 Connect a ``||variables:set [mySprite] kind to [Player]||`` block at the end
+of the newest **on game update** container.
+
+🔲 Change ``||variables:mySprite||`` to ``||variables:fuel||``. 
+
+🔲 Click ``||sprites:Player||`` to get the menu, then choose
+``||sprites:Add a new kind...||`` and create the type **Gas**.
+
+```blocks
+namespace SpriteKind {
+    export const Gas = SpriteKind.create()
+}
+
+game.onUpdateInterval(5000, function () {
+    let fuel = sprites.createProjectileFromSide(img`
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+        5 . . . . . . . . . . . . . . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 . . 5 5 5 5 . 5
+        5 . 5 5 5 5 . 5 5 . 5 5 5 5 . 5
+        5 . 5 5 5 5 . . . . 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . 5 5 5 5 5 5 5 5 5 5 5 5 . 5
+        5 . . . . . . . . . . . . . . 5
+        5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+        `, 0, 50)
+    fuel.x = randint(0, 160) 
+    // @highlight  
+    fuel.setKind(SpriteKind.Gas)
+})
+```
+
 
 ## Step 7
 Drag a ``||sprites:on overlaps||`` block into the workspace. Change the second
