@@ -64,12 +64,12 @@
 * type: tutorial
 * description: Use an extension to add a fuel gauge to your ship. Make sure to refuel often!
 * tags: intermediate, extensions
-* next: space-activity5
+
 
 * url: https://github.com/kiki-lee/pxt-skillmap-mess/tutorials/space/activity4
 * imageUrl: https://raw.githubusercontent.com/kiki-lee/pxt-skillmap-mess/main/img/space/activity4.png
 
-### space-activity5
+<!-- ### space-activity5
 
 * name: Planets
 * type: tutorial
@@ -77,7 +77,7 @@
 * tags: intermediate, arrays
 
 * url: https://github.com/kiki-lee/pxt-skillmap-mess/tutorials/space/activity5
-* imageUrl: https://raw.githubusercontent.com/kiki-lee/pxt-skillmap-mess/main/img/space/activity5.png
+* imageUrl: https://raw.githubusercontent.com/kiki-lee/pxt-skillmap-mess/main/img/space/activity5.png -->
 
 
 ## platformer
