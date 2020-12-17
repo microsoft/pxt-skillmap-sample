@@ -64,12 +64,13 @@ let mySprite = sprites.create(img`
 ## Control your ship
 
 🌟 Let's get your ship moving 🌟
-
-Find the ``||controller:move [mySprite] with buttons ⊕||`` block 
+<hr/>
+🔲 Find the ``||controller:move [mySprite] with buttons ⊕||`` block 
 and drag it into the bottom of the ``||loops:on start||`` container. 
 
-Now your ship will move with the joystick or the WASD keys.
+🔲 Now your ship will move with the joystick or the **W A S D** keys.
 Try moving your ship around in the simulator!
+<br/>
 
 ```blocks
 effects.starField.startScreenEffect()
@@ -99,11 +100,11 @@ controller.moveSprite(mySprite)
 
 **Uh-oh, if you move off screen, your ship disappears!**
 <hr/>
-To keep your ship from exploring beyond the edges, find
+🔲 To keep your ship from exploring beyond the edges, find
  the ``||sprites:set [mySprite] [stay in screen] <off>||`` block and
 snap it in at the end of the program.
  
-Toggle the switch to **`<ON`>** to keep the action on screen.
+🔲 Toggle the switch to **`<ON`>** to keep the action on screen.
 <hr/>
  **You're all set to travel the universe!**
 
