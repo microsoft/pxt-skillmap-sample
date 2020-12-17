@@ -9,11 +9,13 @@ In this tutorial, you'll design a spaceship for your journey.
 ![Flying through space](/img/space/space1.gif "Blasting through a starfield" )
 
 ## Set the scene
-
-Drag the ``||scene:start screen [confetti] effect ⊕||`` from the  ``||scene:Scene||`` category and
-into the ``||loops:on start||`` block that's already in the workspace.
+Let's give 'em something to look at 🔭
 <hr/>
-Next, select ``||scene:star field||`` (instead of ``||scene:confetti||``) from the dropdown
+
+🔲 Drag the ``||scene:start screen [confetti] effect ⊕||`` from the  ``||scene:Scene||`` category and
+into the ``||loops:on start||`` block that's already in the workspace.
+
+🔲 Next, select ``||scene:star field||`` (instead of ``||scene:confetti||``) from the dropdown
 and watch as you blast into space! 🚀 
 
 <hr/>
@@ -24,16 +26,14 @@ effects.starField.startScreenEffect()
 ```
 
 ## Draw your ship
-
-Drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
-block from the ``||sprites:Sprites||`` category and place it 
-at the end of the ``||loops:on start||`` container.
+Time to choose our ship!
 <hr/>
-Click on the grey box in the middle of your
- ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
-to design a ship of your own! 
+🔲 From the ``||sprites:Sprites||`` category, drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
+block  and place it at the end of the ``||loops:on start||`` container.
 
-Are you a rusty pile of scraps or a sleek, futuristic rocket?
+🔲 Click on the grey box in the middle of your
+ ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
+to design a ship of your own! Are you a rusty pile of scraps or a sleek, futuristic rocket?
 <hr/>
 >>*Tip: Don't feel like drawing your ship? Once you're in the sprite editor,
 flip to the gallery and choose from premade images.*
