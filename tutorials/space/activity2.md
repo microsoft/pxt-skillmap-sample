@@ -108,18 +108,20 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ## Custom effects
 
 💥 Now for some special effects 💥
-
+<hr/>
 🔲 Find 
 ``||sprites:[mySprite] start [spray] effect||`` and snap it in at 
 the bottom of the ``||controller:on [A] button pressed ||`` container.  
+
 🔲 Change variable ``||variables:mySprite||`` to ``||variables:projectile||`` if you
 want the effects on your projectiles instead of on your ship.  
+
 🔲 Try different options from the ``||sprites:[spray]||`` dropdown menu and choose the one you like best!  
 <hr/>
 >>*Tip: You can add another ``||sprites:[mySprite] start [spray] effect||`` block
 to add a separate effect on your spaceship*
 <hr/>
-Congrats! Now you're ready to move to the next tutorial.
+**Congrats! Now you're ready to move to the next tutorial.**
 
 ```blocks
 let mySprite: Sprite = null
