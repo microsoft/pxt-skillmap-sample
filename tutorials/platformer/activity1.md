@@ -65,70 +65,95 @@ Now let's take a look at the [__*sidescrolling*__](#scrolld "games that are view
 [__*platformer*__](#plat "games that rely on jump and run as their main mechanic").  
 
 This genre of game peeks in on the action from the side, using "jump" and "run"
-as their main mechanic.  
+as the main mechanic.  
+
+By the time you finish this set of tutorials, you should know all you need 
+to make a fun and engaging arcade game worth sharing.
 
 ![Our first platformer](/img/platformer/platformer1.gif "Look what we're about to learn today!")
 
 
 ## Create the player
 
-First, let's create a Sprite for the player.
-Drag out a ``||sprites: set mySprite to sprite of kind player||``
-block and place it in ``||loops:on start||``.
-Change the variable name to "thePlayer" and draw an image for the sprite.
+The first thing any good platformer needs is a main character. 🐒
+
+In Arcade, our characters are [__*sprites*__](#sprote "2-D images that move on the screen").  
+We'll want to create our main sprite and get it moving before we do anything else. 
+<hr>
+
+🔲 From the ``||sprites:Sprites||`` category, drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
+block to the end of the ``||loops:on start||`` container.
+
+🔲 Click on the grey box in the middle of your
+ ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
+ to open the sprite editor.  From there, you can switch over to "Gallery"
+ and choose a pre-drawn character.
+<hr/>
+>>*Tip: Don't like any of the predrawn characters? Stay in the "Editor"
+and create one of your own*!
+
 
 ```blocks
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
+// @highlight
 let thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+. . . . . f f f f f . . . . . . 
+. . . . f e e e e e f . . . . . 
+. . . f d d d d d e e f . . . . 
+. . f f f d d f f d e f f . . . 
+. c d d e e d d d d e d d f . . 
+. c c d d d d c d d e d f f f . 
+. c d c c c c d d d e d f b d f 
+. . c d d d d d d e e f f d d f 
+. . . c d d d d e e f f e f f f 
+. . . . f f f e e f e e e f . . 
+. . . . f e e e e e e e f f f . 
+. . . f e e e e e e f f f e f . 
+. . f f e e e e f f f f f e f . 
+. f b d f e e f b b f f f e f . 
+. f d d f e e f d d b f f f f . 
+. f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
 ```
 
 ## Move the player
 
-Now we need to get the player Sprite moving.
-Drag out a ``||controller:move sprite with buttons||``
-block and place it at the end of ``||loops:on start||``.
-Change the variable name from "mySprite" to "thePlayer".
-Press the plus button and change the vy argument to 0.
+🢀 Now we need to get the player moving 🢂
+<hr/>
+
+🔲 Drag a ``||controller:move [mySprite] with buttons ⊕||`` block.   
+to the end of the ``||loops:on start||`` container
+
+🔲 Press the ⊕ button on the new block and change the [__*vy*__](#whatVY "vertical velocity") 
+argument to **0** so that the player won't move up or down with the joypad.
+
+<hr/>
+**Now you're ready to give your game a try in the simulator!**
+<br/>
 
 ```blocks
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
 let thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+. . . . . f f f f f . . . . . . 
+. . . . f e e e e e f . . . . . 
+. . . f d d d d d e e f . . . . 
+. . f f f d d f f d e f f . . . 
+. c d d e e d d d d e d d f . . 
+. c c d d d d c d d e d f f f . 
+. c d c c c c d d d e d f b d f 
+. . c d d d d d d e e f f d d f 
+. . . c d d d d e e f f e f f f 
+. . . . f f f e e f e e e f . . 
+. . . . f e e e e e e e f f f . 
+. . . f e e e e e e f f f e f . 
+. . f f e e e e f f f f f e f . 
+. f b d f e e f b b f f f e f . 
+. f d d f e e f d d b f f f f . 
+. f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
+    // @highlight
 controller.moveSprite(thePlayer, 100, 0)
 ```
 
