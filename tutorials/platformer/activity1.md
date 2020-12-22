@@ -64,7 +64,7 @@ tiles.setTilemap(tilemap`level`)
 Now let's take a look at the [__*sidescrolling*__](#scrolld "games that are viewed from the side, with most of the action happening horizontally") 
 [__*platformer*__](#plat "games that rely on jump and run as their main mechanic").  
 
-This genre of game peeks in on the action from the side, using "jump" and "run"
+This kind of game peeks in on the action from the side, using "jump" and "run"
 as the main mechanic.  
 
 By the time you finish this set of tutorials, you should know all you need 
@@ -97,7 +97,7 @@ and create one of your own*!
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
 // @highlight
-let thePlayer = sprites.create(img`
+let mySprite = sprites.create(img`
 . . . . . f f f f f . . . . . . 
 . . . . f e e e e e f . . . . . 
 . . . f d d d d d e e f . . . . 
@@ -135,7 +135,7 @@ argument to **0** so that the player won't move up or down with the joypad.
 ```blocks
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
-let thePlayer = sprites.create(img`
+let mySprite = sprites.create(img`
 . . . . . f f f f f . . . . . . 
 . . . . f e e e e e f . . . . . 
 . . . f d d d d d e e f . . . . 
@@ -154,97 +154,101 @@ let thePlayer = sprites.create(img`
 . f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
     // @highlight
-controller.moveSprite(thePlayer, 100, 0)
+controller.moveSprite(mySprite, 100, 0)
 ```
 
 ## Add gravity
 
-Great! We can move the Sprite with the buttons now.
-However, it looks pretty strange to have it floating in midair.
-Let's add some gravity.
-In MakeCode Arcade, positive y values are in the *down* direction.
-We'll be setting the acceleration y to be positive so that the sprite will fall down.
+To make the game feel more realistic, let's add some gravity.
 
-Drag out a ``||sprites:set sprite x to||`` block and place it at the end of ``||loops:on start||``.
-Change the variable name from "mySprite" to "thePlayer".
-Change the dropdown to ay (acceleration y) and set the value to 500.
+To accomplish that, we can add [__*acceleration*__](#accel "increased speed in a direction") to "pull down" on our sprite.
+<hr/>
+🔲 Drag a ``||sprites:set [mySprite] [x] to [0]||`` block to the end of 
+the ``||loops:on start||`` container.
+
+🔲 Click the dropdown to change **x** to **ay (acceleration y)** 
+
+🔲 Replace **0** with **500**.
+<br/>
 
 
 
 ```blocks
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
-let thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+let mySprite = sprites.create(img`
+. . . . . f f f f f . . . . . . 
+. . . . f e e e e e f . . . . . 
+. . . f d d d d d e e f . . . . 
+. . f f f d d f f d e f f . . . 
+. c d d e e d d d d e d d f . . 
+. c c d d d d c d d e d f f f . 
+. c d c c c c d d d e d f b d f 
+. . c d d d d d d e e f f d d f 
+. . . c d d d d e e f f e f f f 
+. . . . f f f e e f e e e f . . 
+. . . . f e e e e e e e f f f . 
+. . . f e e e e e e f f f e f . 
+. . f f e e e e f f f f f e f . 
+. f b d f e e f b b f f f e f . 
+. f d d f e e f d d b f f f f . 
+. f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
-controller.moveSprite(thePlayer, 100, 0)
-thePlayer.ay = 500
+controller.moveSprite(mySprite, 100, 0)
+// @highlight
+mySprite.ay = 500
 ```
 
 ## Jump Pt. 1
 
-Let's add another button to the mix.
-We want the player to jump when the A button is pressed.
-Let's drag out an ``||controller:on A button pressed||`` block and place it on the workspace.
+Now that the player is on the ground, we can make them jump!
 
-```blocks
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-})
-```
+Let's attach a jumping action to the 🅐 button.
+<hr/>
 
-## Jump Pt. 2
+🔲 Start by dragging an ``||controller:on [A] button [pressed]||`` block into the workspace.
 
-To make the player jump, we want to set their velocity so that they travel upwards.
-That means we want to give them a *negative* velocity y.
+🔲 Inside of that, add ``||sprites:set [mySprite] [x] to [0]||`` . 
 
-Drag out a ``||sprites:set sprite x to||`` block and place it inside of ``||controller:on A button pressed||``.
-Change the variable name from "mySprite" to "thePlayer".
-Change the dropdown to vy (velocity y) and set the value to -200.
+🔲 To choose the attribute for the player's [__*vertical velocity*__](#whatVelY "speed in the up/down direction"),
+click the dropdown menu and change **x** to **vy (velocity y)**.
+
+🔲 The player will jump upward if you change **0** to something smaller.
+Try  **-150** or **-200**.  
+<br/>
+
 
 ```blocks
 scene.setBackgroundColor(11)
 tiles.setTilemap(tilemap`level`)
-let thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+let mySprite = sprites.create(img`
+. . . . . f f f f f . . . . . . 
+. . . . f e e e e e f . . . . . 
+. . . f d d d d d e e f . . . . 
+. . f f f d d f f d e f f . . . 
+. c d d e e d d d d e d d f . . 
+. c c d d d d c d d e d f f f . 
+. c d c c c c d d d e d f b d f 
+. . c d d d d d d e e f f d d f 
+. . . c d d d d e e f f e f f f 
+. . . . f f f e e f e e e f . . 
+. . . . f e e e e e e e f f f . 
+. . . f e e e e e e f f f e f . 
+. . f f e e e e f f f f f e f . 
+. f b d f e e f b b f f f e f . 
+. f d d f e e f d d b f f f f . 
+. f f f f f f f f f f f f f . . 
     `, SpriteKind.Player)
-controller.moveSprite(thePlayer, 100, 0)
-thePlayer.ay = 500
+controller.moveSprite(mySprite, 100, 0)
+mySprite.ay = 500
+// @highlight
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    thePlayer.vy = -200
+    mySprite.vy = -200
 })
 ```
 
 ## Done
 
-That's it! We've created a simple platformer game.
-In the next lesson we'll learn how to add obstacles and goals to our game.
+🔥 **That's it! We've created a simple platformer game.** 🔥  
+
+In the next lesson we'll learn how to add obstacles and goals.
