@@ -35,13 +35,14 @@
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAyMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAwMDEwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile1",
             "myTiles.tile3",
             "myTiles.tile4",
-            "myTiles.tile5"
+            "myTiles.tile5",
+            "myTiles.tile2"
         ]
     },
     "*": {
@@ -60,11 +61,11 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location
     game.over(true)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    thePlayer.vy = -200
+    mySprite.vy = -200
 })
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -82,31 +83,40 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 ```
 
-## Start
+## Start @unplugged
 
-In this lesson, we'll learn how to make some simple enemies.
-We'll also use a sprite overlap event to have them interact with the player Sprite.
+In this lesson, we'll take what we made in previous tutorials and add simple enemies.  
+
+We'll also use a sprite overlap event to have enemies interact with the player sprite.
+
+![Editing our platformer](/img/platformer/platformer3.gif "Time to live dangerously!")
+
 
 ## Spawning enemies pt. 1
 
-Let's start by spawning our enemies on the tilemap.
-We'll use the purple "!" tiles as our enemy spawn points.
+**Let's start by spawning our enemies on the tilemap.**  
 
-Drag out a ``||loops: for element value of||`` block and place it at the bottom of ``||loops: on start||``.
+We'll use purple [ ! ] tiles as enemy spawn points.
+<hr/>
+
+🔲 Drag out a ``||loops: for element [value] of [list]||`` [__loop__](#loopd "a segment of code that runs multiple times in a row")
+and snap it into the bottom of the ``||loops: on start||`` container.
+
+<br/>
 
 ```blocks
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 let list: number[] = []
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -124,11 +134,11 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of list) {
 
@@ -146,9 +156,9 @@ Now our loop will run for each tile location.
 On each step of the loop, "value" will contain a location on the tilemap!
 
 ```blocks
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -166,11 +176,11 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
 
@@ -186,9 +196,9 @@ Click on the grey rectangle to draw an image for this sprite.
 
 ```blocks
 let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -206,11 +216,11 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
     newEnemy = sprites.create(img`
@@ -242,9 +252,9 @@ Change the sprite to be "newEnemy" and drag "value" out of the loop and place it
 
 ```blocks
 let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -262,11 +272,11 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
     newEnemy = sprites.create(img`
@@ -294,14 +304,14 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
 ## Enemy follow
 Alright, now that we have our enemies and they're in the right locations, we want to make them move towards the player.
 Drag out a ``||sprites: set myEnemy follow sprite||`` block and place it inside the loop.
-Change the first variable to "newEnemy" an the second variable to "thePlayer".
+Change the first variable to "newEnemy" an the second variable to "mySprite".
 Press the "+" on the block and change the speed to be 30.
 
 ```blocks
 let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -319,11 +329,11 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
     newEnemy = sprites.create(img`
@@ -345,7 +355,7 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         a a a a a a a a a a a a a a a a
         `, SpriteKind.Enemy)
     tiles.placeOnTile(newEnemy, value)
-    newEnemy.follow(thePlayer, 30)
+    newEnemy.follow(mySprite, 30)
 }
 ```
 
