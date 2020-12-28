@@ -102,19 +102,27 @@ We'll also use a sprite overlap event to have enemies interact with the player s
 
 ## Spawning enemies pt. 1
 
-**Let's start by spawning our enemies on the tilemap.**  
+**Let's start by choosing a location to [__*spawn*__](#spawnd "make appear") 
+some enemies on the tilemap.**  
 
-We'll use purple [ ! ] tiles as enemy spawn points.
+We'll use purple **[ ! ]** tiles as enemy spawn points.
 <hr/>
 
 🔲 Drag out a ``||loops: for element [value] of [list]||`` [__loop__](#loopd "a segment of code that runs multiple times in a row")
 and snap it into the bottom of the ``||loops: on start||`` container.
 
+The [__*list*__](#listical  "ordered group of items") we need in the header of that 👆 loop 
+is the list of saved location for each of the **[ ! ]** blocks. 
+Fourunately, we have a piece of code that tells us where those are.
+
+🔲 Find the ``||scene: array of all [ ] locations||`` argument block and 
+drag it into the header of the new loop where the **list** argument is.
+
+🔲 Click on the checkerboard and change it to the **[ ! ]** tile.
 <br/>
 
 ```blocks
 let mySprite: Sprite = null
-let list: number[] = []
 scene.setBackgroundColor(11)
 mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
@@ -140,62 +148,36 @@ tiles.setTilemap(tilemap`level`)
 scene.cameraFollowSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
-for (let value of list) {
-
-}
-```
-
-## Spawning enemies pt. 2
-
-We want to loop over all of the spawn point locations.
-To do that, we need an array of all the purple "!" tiles.
-Drag out and ``||scene: array of all tile locations||`` block and place it on top of the list variable.
-Change the tile from the checkerboard to the purple "!".
-
-Now our loop will run for each tile location.
-On each step of the loop, "value" will contain a location on the tilemap!
-
-```blocks
-let mySprite: Sprite = null
-scene.setBackgroundColor(11)
-mySprite = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    `, SpriteKind.Player)
-mySprite.ay = 500
-controller.moveSprite(mySprite, 100, 0)
-tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(mySprite)
-tiles.placeOnRandomTile(mySprite, myTiles.tile3)
-info.setLife(3)
+// @highlight
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
 
 }
 ```
+
+## A little lesson @unplugged
+
+Now our loop will run for each tile location.  
+
+Each time through the loop, the argument **"value"** will contain another 
+location on the tilemap!
+
 
 ## Spawning enemies pt. 3
 
-Let's create our enemy Sprites.
-Drag out a ``||sprites: set mySprite to sprite of kind player||`` block and place it inside of our loop.
-Change the mySprite variable to a new variable named "newEnemy" and change the sprite kind to Enemy.
-Click on the grey rectangle to draw an image for this sprite.
+👾 Time to spawn some enemies 👾 
+<hr/>
+
+🔲 Drag ``||sprites: set [mySprite2] to sprite [ ] of kind [player]||`` 
+into the new loop.
+
+🔲 Click the "**mySprite2**" [__*variable*__](#varied "a label that holds the place for something that can change") 
+and choose to create a **new variable** called "**myEnemy**". 
+
+🔲 Click the grey sprite rectangle inside the new block to draw an image for the enemy
+(or choose one from the gallery.)
 
 ```blocks
-let newEnemy: Sprite = null
+let myEnemy: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(11)
 mySprite = sprites.create(img`
@@ -223,7 +205,8 @@ scene.cameraFollowSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+// @highlight
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -245,13 +228,22 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
 ```
 
 ## Spawning enemies pt. 3
-Our enemies are spawning now, but they are in the wrong location.
-We need to place them on top of the tile that is stored in the "value" variable.
-Drag out a ``||scene: place sprite on top of tilemap col row||`` block and place it in the loop.
-Change the sprite to be "newEnemy" and drag "value" out of the loop and place it as the location.
+Our enemies are spawning now, but they're just hanging out in one location.
+
+Let's start them on each of the **[ ! ]** tile locations. (Each location will be 
+stored in the **"value"** variable at some point as we move through
+the **for element** loop.)
+<hr/>
+
+🔲 Drag a ``||scene: place [mySprite] on top of tilemap col [0] row [0]||`` block 
+to the bottom of the **for element** loop.
+
+🔲 Change the sprite variable to "**myEnemy**" and replace the  ``||scene: tilemap col [0] row [0]||``
+argument block with the ``||variables: value||`` argument from the header of the
+**for element** loop.
 
 ```blocks
-let newEnemy: Sprite = null
+let myEnemy: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(11)
 mySprite = sprites.create(img`
@@ -279,7 +271,7 @@ scene.cameraFollowSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -297,18 +289,24 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         a b b b b b b b b b b b b b b a
         a a a a a a a a a a a a a a a a
         `, SpriteKind.Enemy)
-    tiles.placeOnTile(newEnemy, value)
+        // @highlight
+    tiles.placeOnTile(myEnemy, value)
 }
 ```
 
 ## Enemy follow
-Alright, now that we have our enemies and they're in the right locations, we want to make them move towards the player.
-Drag out a ``||sprites: set myEnemy follow sprite||`` block and place it inside the loop.
-Change the first variable to "newEnemy" an the second variable to "mySprite".
+💤 Did you notice that we have the laziest enemies ever? 💤
+
+Let's wake-up our sprites and get them following our player.
+<hr/>
+🔲 Drag out a ``||sprites: set myEnemy follow sprite||`` block 
+and place it inside the loop.
+
+🔲 Change the sprite variable to "**myEnemy**" an the second variable to "mySprite".
 Press the "+" on the block and change the speed to be 30.
 
 ```blocks
-let newEnemy: Sprite = null
+let myEnemy: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundColor(11)
 mySprite = sprites.create(img`
@@ -336,7 +334,7 @@ scene.cameraFollowSprite(mySprite)
 tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -354,8 +352,8 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         a b b b b b b b b b b b b b b a
         a a a a a a a a a a a a a a a a
         `, SpriteKind.Enemy)
-    tiles.placeOnTile(newEnemy, value)
-    newEnemy.follow(mySprite, 30)
+    tiles.placeOnTile(myEnemy, value)
+    myEnemy.follow(mySprite, 30)
 }
 ```
 
