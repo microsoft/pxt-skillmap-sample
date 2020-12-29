@@ -530,6 +530,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     if (sprite.bottom < otherSprite.y) {
         sprite.vy = -100
     } else {
+    // @highlight
         info.changeLifeBy(-1)
     }
 })
