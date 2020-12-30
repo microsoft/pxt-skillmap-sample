@@ -506,7 +506,7 @@ the **⊕** at the bottom-left corner of the **if/then** container and one will 
         sprite.vy = -100
     } else {
     }
-
+})
 ```
 
 ## Damage pt. 6.6
