@@ -165,7 +165,7 @@ Excellent! You should have a **startNextLevel** function container
 in your workspace. Let's fill it up!
 
 Right now, the code you need for starting a level lives inside the 
-``||loops: on start||`` container — we'll want to move it over.
+``||loops: on start||`` container — we'll want to move it over to the function .
 <hr/>
 
 🔲 Pull the ``||scene: set tilemap to [ ]||`` block out of ``||loops: on start||``.
@@ -210,20 +210,31 @@ function startNextLevel () {
 
 ## Refactoring pt. 2
 
-Now, open the functions category again and drag out a ``||functions: call startNextLevel||`` block and place it at the end of ``||loops: on start||``.
-The game should now be back to the way it was originally.
-If it isn't, take a look at the hint for this step and make sure the code matches up.
+Here's an important fact: *There's no point in building a function unless you
+__call__ it somewhere in your program.*
+
+The function that you've already built is just a 
+[**_definition_**](#defineMe "explanation of the meaning") 
+to let the computer know
+which instructions to run when you call **startNextLevel** in your code.
+The definition doesn't give the computer any idea *when* to run those 
+instructions.
+
+Let's add a function call into our program to let the computer know
+when to run **startNextLevel**.
+<hr/>
+🔲 From the ``||functions: Functions||`` category, drag a 
+``||functions: call startNextLevel||`` block and snap it into the end of the
+``||loops: on start||`` container.
+<hr/>
+Check your game in the simulator. It shouldn't feel any different than
+the original (yet).  
+
+If it doesn't feel the same, take a look at the hint
+to make sure your code matches up.
 
 ```blocks
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
-    game.over(false)
-})
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
-    game.over(true)
-})
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.vy = -200
-})
+
 function startNextLevel () {
     tiles.setTilemap(tilemap`level`)
     tiles.placeOnRandomTile(mySprite, myTiles.tile3)
@@ -251,14 +262,6 @@ function startNextLevel () {
     }
 }
 
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    otherSprite.destroy()
-    if (sprite.bottom < otherSprite.y) {
-        sprite.vy = -100
-    } else {
-        info.changeLifeBy(-1)
-    }
-})
 let myEnemy: Sprite = null
 let currentLevel = 0
 let mySprite: Sprite = null
@@ -285,18 +288,28 @@ mySprite.ay = 500
 controller.moveSprite(mySprite, 100, 0)
 scene.cameraFollowSprite(mySprite)
 info.setLife(3)
+// @highlight
 startNextLevel()
 ```
 
 ## Refactoring pt. 3
 
-We want to start a new level when the player overlaps the trophy tile.
-Let's remove the ``||game: game over||`` block from that tile overlap event and replace it with ``||functions: call startNextLevel||``.
+🏆  Reach the trophy  🏆
+
+The trophy tile would make a perfect doorway to the next level.  We already
+have an event for when the player overlaps that tile, we just need to change
+what happens inside of it. 
+<hr/>
+🔲 Remove the ``||game: game over <WIN>||`` block from the 
+**on sprite overlaps 🏆** event 
+and replace it with a new ``||functions: call startNextLevel||`` block.  
+<br/>
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
+   // @highlight
     startNextLevel()
 })
 function startNextLevel () {
@@ -329,16 +342,40 @@ function startNextLevel () {
 
 ## Variable
 
-Let's create our variable to keep track of the current level.
-Create a new variable called "currentLevel".
-We want to *increment* this variable each time the startNextLevel function is called.
-Drag out a ``||variables: change currentLevel by 1||`` block and place it at the bottom of the startNextLevel function.
+👾 Lots of great games have more than two levels 👾
+
+If we want to be able to keep track of the level we're on and
+recall that level whenever we need it, we're going to need
+a variable.
+
+A variable will let us use the placeholder **currentLevel**
+to make decisions instead of creating new code for every possibility.
+<hr/>
+
+🔲 To make a new variable, go to the ``||variables: Variables||`` menu
+and click on ``||controller: Make a Variable...||`` .
+
+🔲 Enter **currentLevel** in the textbox and click **OK**.  
+<br/>
+
+## Variable 2
+
+Now you have a variable named **currentLevel**.  Let's use it!
+
+We'll need to [**_increment_**](#addOn "add to")
+ **currentLevel** each time the **startNextLevel** function is called.
+ <hr/>
+
+🔲 Snap a ``||variables: change [currentLevel] by [1]||`` block 
+into the **top** of the **startNextLevel** function.  
+<br/>
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
+    currentLevel += 1
     tiles.setTilemap(tilemap`level`)
     tiles.placeOnRandomTile(mySprite, myTiles.tile3)
     for (let value of tiles.getTilesByType(myTiles.tile5)) {
@@ -363,14 +400,21 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
+    
 }
 ```
 
 ## Choosing a level pt. 1
 
-Now we'll add some logic to change the tilemap.
-Drag out an ``||logic: if then||`` block and place it at the *top* of our function (above the code to spawn enemies and place the player).
+If we want to change the scene for each new level (*spoiler...we do!*) then we're
+going to need to add some logic that looks at the **currentLevel** variable
+before it sets the stage.  
+
+This is the perfect place for another **if/then** element!
+<hr/>
+🔲 Snap a new ``||logic: if <true> then||`` block into the **top** of 
+the **startNextLevel** function container.  
+<br/>
 
 ```blocks
 let myEnemy: Sprite = null
