@@ -53,6 +53,13 @@
 }
 ```
 
+```ghost
+sprites.allOfKind(SpriteKind.Enemy)
+currentLevel.fill(0)
+for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+    }
+```
+
 ```template
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
     game.over(false)
@@ -421,7 +428,9 @@ let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
-    if (false) {
+    currentLevel += 1
+    // @highlight
+    if (true) {
     }
     tiles.setTilemap(tilemap`level`)
     tiles.placeOnRandomTile(mySprite, myTiles.tile3)
@@ -447,22 +456,33 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
+
 }
 ```
 
 ## Choosing a level pt. 2
 
-For the condition, we want to check the current value of our level variable.
-Drag out a ``||logic:0 < 0||`` block and place it in the condition of the ``||logic:if then||``.
-Change the "<" dropdown to be an equals ("=") and place the ``||variables:currentLevel||`` block on the left side.
+First, we should check and see if our current level is **1**.  
+If it is, we'll run the code for the first level,
+using our original tilemap.
+<hr/> 
+
+🔲 Find a ``||logic:[0] [=] [0]||`` block to replace **`<true>`**
+ in the empty ``||logic:if <true> then||`` container.
+
+🔲 Replace the first **0** in the logic arguement with  ``||variables:currentLevel||``. 
+
+🔲 Replace the second **0** of the logic argument with **1**.  
+<br/>
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
-    if (currentLevel === 0) {
+    currentLevel += 1
+    // @highlight
+    if (currentLevel === 1) {
     }
     tiles.setTilemap(tilemap`level`)
     tiles.placeOnRandomTile(mySprite, myTiles.tile3)
@@ -488,27 +508,91 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
 }
 ```
 
 ## Choosing a level pt. 3
 
-Now let's move the ``||scene: set tilemap to||`` block inside of the ``||logic: if then||``.
-This tilemap will be the first level of our game (level 0).
+💡  When restructuring a program, it's a good habit to make sure everything works 
+as expected before making it more complicated. 
 
-Press the "+" button on the ``||logic: if then||`` to add an else branch.
-Inside of the else, place a ``||game: game over||`` block and change the value to "win".
+Let's get our **if/then** logic working with our current game before we add new levels.
+
+<hr/>
+If the player is on level 1, we want to show our current tile map.
+
+🔲 Move the ``||scene: set tilemap to [ ]||`` block from beneath the **if/then**
+and snap it inside the empty container.
+
+The connected code will travel with the ``||scene: set tilemap to [ ]||`` block, 
+so once it has been connected, you'll need to grab the rest of the code and 
+snap it back in place beneath the **if/then**.
+
+```blocks
+
+let myEnemy: Sprite = null
+let mySprite: Sprite = null
+let currentLevel = 0
+function startNextLevel () {
+    currentLevel += 1
+    if (currentLevel === 1) {
+        tiles.setTilemap(tilemap`level`)
+    }
+    tiles.placeOnRandomTile(mySprite, myTiles.tile3)
+    for (let value of tiles.getTilesByType(myTiles.tile5)) {
+        myEnemy = sprites.create(img`
+            a a a a a a a a a a a a a a a a
+            a b b b b b b b b b b b b b b a
+            a b a a a a a a a a a a a a b a
+            a b a a b b a a a a b b a a b a
+            a b a a a a b a a b a a a a b a
+            a b a a a a a a a a a a a a b a
+            a b a a a b a a a a b a a a b a
+            a b a a a b a a a a b a a a b a
+            a b a a a a a a a a a a a a b a
+            a b a a a a a a a a a a a a b a
+            a b a a a b b b b b b a a a b a
+            a b a a b a a a a a a b a a b a
+            a b a a a a a a a a a a a a b a
+            a b a a a a a a a a a a a a b a
+            a b b b b b b b b b b b b b b a
+            a a a a a a a a a a a a a a a a
+            `, SpriteKind.Enemy)
+        tiles.placeOnTile(myEnemy, value)
+        myEnemy.follow(mySprite, 30)
+    }
+}
+```
+
+## Choosing a level pt. 3.5
+
+That's a great start...but to ensure that it's working the same way 
+as your original game, you'll need the player to win when they reach the trophy.
+
+Let's think about how to do this with the conditional logic:
+ - **IF** you're just starting and **currentLevel** is **1**, **THEN** put up the tilemap
+ - Once we've reached the trophy, **currentLevel** is **bigger than 1**, and our player wins! 
+
+Thinking about it this way means we can use an **else** clause in our condition 
+to capture any case where **currentLevel** is larger than any level numbers we've 
+already defined.
+<hr/>  
+
+🔲 Press the **⊕** button on the **if/then** container to add an **else** clause.
+
+🔲 Snap a ``||game: game over <WIN>||`` block inside.
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
-    if (currentLevel === 0) {
+    currentLevel += 1
+    if (currentLevel === 1) {
         tiles.setTilemap(tilemap`level`)
     }
     else {
+    // @highlight
         game.over(true)
     }
     tiles.placeOnRandomTile(mySprite, myTiles.tile3)
@@ -534,123 +618,112 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
 }
 ```
 
 ## Choosing a level pt. 3
 
-Now all we need to do to add levels it our game is add more branches to the ``||logic: if then||`` block.
-Let's add one now.
+❓❓ Ready to take this to another level ❓❓
 
-Press the "+" button on the ``||logic: if then||`` to add an else if branch.
-Duplicate the ``||logic:currentLevel = 0||`` block and place the copy in the new condition slot.
-Change the 0 to 1.
+From here, adding new levels is extremely straightforward.  All you need to do is:
+ - Add a new **else if** clause to your logic container
+ - Copy the condition from your previous level into the new **else if**
+ - Change the number on the right-side of the **=** to be the number of your new level
+ - Set the new tilemap inside of the new **else if**
 
-```blocks
+ That's it!  Ready to give it a shot?
+ <hr/>
+
+🔲 Press the **⊕** button on the **if/then/else** container to add an 
+**else if** clause.
+
+🔲 Duplicate the ``||logic:[currentLevel] [=] [1]||`` block and place the 
+copy in the new **else if** condition slot.
+
+🔲 Change **1** to **2**.
+
+🔲 Duplicate the ``||scene: set tilemap to [ ]||`` block from level 1 and snap it into the 
+empty **else if** container.  
+<br/>
+
+
+```block
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
-function startNextLevel () {
-    if (currentLevel === 0) {
+
+    if (currentLevel === 1) {
         tiles.setTilemap(tilemap`level`)
     }
-    else if (currentLevel === 1) {
+    else if (currentLevel === 2) {
+          tiles.setTilemap(tilemap`level`)
+
     }
     else {
         game.over(true)
     }
-    tiles.placeOnRandomTile(mySprite, myTiles.tile3)
-    for (let value of tiles.getTilesByType(myTiles.tile5)) {
-        myEnemy = sprites.create(img`
-            a a a a a a a a a a a a a a a a
-            a b b b b b b b b b b b b b b a
-            a b a a a a a a a a a a a a b a
-            a b a a b b a a a a b b a a b a
-            a b a a a a b a a b a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b b b b b b a a a b a
-            a b a a b a a a a a a b a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b b b b b b b b b b b b b b a
-            a a a a a a a a a a a a a a a a
-            `, SpriteKind.Enemy)
-        tiles.placeOnTile(myEnemy, value)
-        myEnemy.follow(mySprite, 30)
-    }
-    currentLevel += 1
-}
+    
+
 ```
 
 ## Choosing a level pt. 4
-Inside the else if branch, place another ``||scene: set tilemap to||`` and draw a new level (or just copy the first level again).
 
-Try this out in the simulator!
+🎨 Time to get creative 🎨
 
-```blocks
-let myEnemy: Sprite = null
-let mySprite: Sprite = null
-let currentLevel = 0
-function startNextLevel () {
-    if (currentLevel === 0) {
-        tiles.setTilemap(tilemap`level`)
-    }
-    else if (currentLevel === 1) {
-        tiles.setTilemap(tilemap`level`)
-    }
-    else {
-        game.over(true)
-    }
-    tiles.placeOnRandomTile(mySprite, myTiles.tile3)
-    for (let value of tiles.getTilesByType(myTiles.tile5)) {
-        myEnemy = sprites.create(img`
-            a a a a a a a a a a a a a a a a
-            a b b b b b b b b b b b b b b a
-            a b a a a a a a a a a a a a b a
-            a b a a b b a a a a b b a a b a
-            a b a a a a b a a b a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a b a a a a b a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a b b b b b b a a a b a
-            a b a a b a a a a a a b a a b a
-            a b a a a a a a a a a a a a b a
-            a b a a a a a a a a a a a a b a
-            a b b b b b b b b b b b b b b a
-            a a a a a a a a a a a a a a a a
-            `, SpriteKind.Enemy)
-        tiles.placeOnTile(myEnemy, value)
-        myEnemy.follow(mySprite, 30)
-    }
-    currentLevel += 1
-}
-```
+What would you like to add or remove from the tilemap for your second level?
+Click on the tilemap icon inside the ``||scene: set tilemap to [ ]||`` block
+and edit it until you've got something of your own. 
+
+Don't forget to leave a trophy tile in the new tilemap so the player has a way
+to win!
+
+You can follow those same steps to add a 3rd, 4th, or even 5th level!
+
 
 ## Enemy cleanup pt. 1
 
-Finally, we need to clean up enemies from the last level before loading the new one.
-Drag out a ``||loops: for element value of||`` block and place it at the *top* of the function (above the ``||logic: if then||``).
+```ghost
+sprites.allOfKind(SpriteKind.Enemy)
+currentLevel.fill(0)
+for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+    }
+```
 
-For the list, drag out an ``||sprites:array of sprites of kind||`` from the "Arrays" category and change the kind to "Enemy". You'll need to remove the array block from the ``||variables:set variable||`` block (see the hint for what the code should look like).
+🎮 Try your game 🎮
+
+There may be a couple of hiccups with the level changes...for example, we 
+need to clean up enemies from the last level before loading a new one.
+
+To do that, you'll need to go through your entire list of enemies and 
+destroy them one by one. Fortunately, Arcade has a block for this exact purpose.
+<hr/>
+
+🔲 Snap a ``||loops: for element [value] of [list]||`` loop into the very **top**
+ of the **startNextLevel** function.
+
+🔲 From the ``||arrays:Arrays||`` category, grab an ``||sprites:array of sprites of kind [Player]||``
+ argument and replace the **list** variable in the header of your new loop.
+
+🔲 Change the **array of sprites** kind to "Enemy". 
+<hr/>
+
+> *Tip: To use the ``||sprites:array of sprites of kind [Player]||`` block,
+you'll need to remove it from  ``||variables:set [sprite list] to [array of sprites of kind [Player]]||``
+(see the hint for what the code should look like). *
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
+// @highlight
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
     }
-    if (currentLevel === 0) {
+    currentLevel += 1
+    if (currentLevel === 1) {
         tiles.setTilemap(tilemap`level`)
     }
-    else if (currentLevel === 1) {
+    else if (currentLevel === 2) {
         tiles.setTilemap(tilemap`level`)
     }
     else {
@@ -679,27 +752,41 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
+
 }
 ```
+
 
 ## Enemy cleanup pt. 2
 
-Now we'll destroy the enemy.
-Drag out a ``||sprites: destroy sprite||`` block and change the variable to the "value" from the ``||loops: for element value of||`` loop.
+Now you have a loop that will focus on each enemy, one at a time. 
+This is your chance to destroy them!
+<hr/>
+
+🔲 Drag a ``||sprites: destroy [mySprite]||`` block into the new **for element** loop.
+
+🔲 Replace ``||variables: mySprite||`` with the ``||variables: value||``
+attribute from the header of the **for element** loop.  
+<hr/>
+
+** That's it!  Your game can have as many levels as you can imagine!**
+
+
 
 ```blocks
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 let currentLevel = 0
 function startNextLevel () {
+// @highlight
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
         value.destroy()
     }
-    if (currentLevel === 0) {
+    currentLevel += 1
+    if (currentLevel === 1) {
         tiles.setTilemap(tilemap`level`)
     }
-    else if (currentLevel === 1) {
+    else if (currentLevel === 2) {
         tiles.setTilemap(tilemap`level`)
     }
     else {
@@ -728,12 +815,7 @@ function startNextLevel () {
         tiles.placeOnTile(myEnemy, value)
         myEnemy.follow(mySprite, 30)
     }
-    currentLevel += 1
+
 }
 ```
-
-## Finish
-
-Alright, now our game has more than one level!
-Try adding even more before going to the next lesson.
 
