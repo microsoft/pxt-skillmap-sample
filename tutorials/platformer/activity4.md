@@ -419,8 +419,8 @@ before it sets the stage.
 
 This is the perfect place for another **if/then** element!
 <hr/>
-🔲 Snap a new ``||logic: if <true> then||`` block into the **top** of 
-the **startNextLevel** function container.  
+🔲 Connect a new ``||logic: if <true> then||`` block near the **top** of 
+the **startNextLevel** function container, just below the block to **change currentLevel by 1** .  
 <br/>
 
 ```blocks
@@ -704,7 +704,7 @@ destroy them one by one. Fortunately, Arcade has a block for this exact purpose.
 🔲 From the ``||arrays:Arrays||`` category, grab an ``||sprites:array of sprites of kind [Player]||``
  argument and replace the **list** variable in the header of your new loop.
 
-🔲 Change the **array of sprites** kind to "Enemy". 
+🔲 Change the **array of sprites** kind to **Enemy**. 
 <hr/>
 
 > *Tip: To use the ``||sprites:array of sprites of kind [Player]||`` block,
