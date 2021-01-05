@@ -4,7 +4,7 @@
 
 ## Introduction @unplugged
 
-![Psyched Monkey](/static/img/interface/monkey.png "Psyched Monkey is Ready!" )
+![Psyched Monkey](/static/skillmaps/interface/interface/monkey.png "Psyched Monkey is Ready!" )
 
 *Are you ready to start coding your own games?* 
 
@@ -71,7 +71,7 @@ Blocks can be dragged out from the toolbox, connected, duplicated, and deleted.
 
 Keep going to learn more about blocks.
 
-![Block Animation](/static/img/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
+![Block Animation](/static/skillmaps/interface/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
 
 
 
@@ -202,7 +202,7 @@ Argument blocks are special pieces that add information to other
 blocks. Sometimes they're pointy, sometimes they're rounded,
 but they always need another block to snap into. Argument blocks look something like this:
 
-![Argument Blocks](/static/img/interface/parameter-blocks.png "This is what the shape of an argument block looks like" )
+![Argument Blocks](/static/skillmaps/interface/interface/parameter-blocks.png "This is what the shape of an argument block looks like" )
 
 <hr/>
 **Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
