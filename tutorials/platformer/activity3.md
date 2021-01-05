@@ -35,13 +35,14 @@
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAyMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAwMDEwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile1",
             "myTiles.tile3",
             "myTiles.tile4",
-            "myTiles.tile5"
+            "myTiles.tile5",
+            "myTiles.tile2"
         ]
     },
     "*": {
@@ -60,11 +61,11 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location
     game.over(true)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    thePlayer.vy = -200
+    mySprite.vy = -200
 })
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -82,31 +83,48 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 ```
 
-## Start
+## Start @unplugged
 
-In this lesson, we'll learn how to make some simple enemies.
-We'll also use a sprite overlap event to have them interact with the player Sprite.
+In this lesson, we'll take what we made in previous tutorials and add simple enemies.  
+
+We'll also use a sprite overlap event to have enemies interact with the player sprite.
+
+![Editing our platformer](/static/skillmaps/platformer/platformer3.gif "Time to live dangerously!")
+
 
 ## Spawning enemies pt. 1
 
-Let's start by spawning our enemies on the tilemap.
-We'll use the purple "!" tiles as our enemy spawn points.
+**Let's start by choosing a location to [__*spawn*__](#spawnd "make appear") 
+some enemies on the tilemap.**  
 
-Drag out a ``||loops: for element value of||`` block and place it at the bottom of ``||loops: on start||``.
+We'll use purple **[ ! ]** tiles as enemy spawn points.
+<hr/>
+
+🔲 Drag out a ``||loops: for element [value] of [list]||`` [__loop__](#loopd "a segment of code that runs multiple times in a row")
+and snap it into the bottom of the ``||loops: on start||`` container.
+
+The [__*list*__](#listical  "ordered group of items") we need in the header of that 👆 loop 
+is the list of saved location for each of the **[ ! ]** blocks. 
+Fourunately, we have a piece of code that tells us where those are.
+
+🔲 Find the ``||scene: array of all [ ] locations||`` argument block and 
+drag it into the header of the new loop where the **list** argument is.
+
+🔲 Click on the checkerboard and change it to the **[ ! ]** tile.
+<br/>
 
 ```blocks
-let thePlayer: Sprite = null
-let list: number[] = []
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -124,71 +142,46 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
-for (let value of list) {
-
-}
-```
-
-## Spawning enemies pt. 2
-
-We want to loop over all of the spawn point locations.
-To do that, we need an array of all the purple "!" tiles.
-Drag out and ``||scene: array of all tile locations||`` block and place it on top of the list variable.
-Change the tile from the checkerboard to the purple "!".
-
-Now our loop will run for each tile location.
-On each step of the loop, "value" will contain a location on the tilemap!
-
-```blocks
-let thePlayer: Sprite = null
-scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
-tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
-info.setLife(3)
+// @highlight
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
 
 }
 ```
+
+## A little lesson @unplugged
+
+Now our loop will run for each tile location.  
+
+Each time through the loop, the argument **"value"** will contain another 
+location on the tilemap!
+
 
 ## Spawning enemies pt. 3
 
-Let's create our enemy Sprites.
-Drag out a ``||sprites: set mySprite to sprite of kind player||`` block and place it inside of our loop.
-Change the mySprite variable to a new variable named "newEnemy" and change the sprite kind to Enemy.
-Click on the grey rectangle to draw an image for this sprite.
+👾 Time to spawn some enemies 👾 
+<hr/>
+
+🔲 Drag ``||sprites: set [mySprite2] to sprite [ ] of kind [player]||`` 
+into the new loop.
+
+🔲 Click the **mySprite2** [__*variable*__](#varied "a label that holds the place for something that can change") 
+and choose to create a **new variable** called **myEnemy**. 
+
+🔲 Click the grey sprite rectangle inside the new block to draw an image for the enemy
+(or choose one from the gallery.)
+<br/>
 
 ```blocks
-let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let myEnemy: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -206,14 +199,15 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+// @highlight
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -235,16 +229,26 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
 ```
 
 ## Spawning enemies pt. 3
-Our enemies are spawning now, but they are in the wrong location.
-We need to place them on top of the tile that is stored in the "value" variable.
-Drag out a ``||scene: place sprite on top of tilemap col row||`` block and place it in the loop.
-Change the sprite to be "newEnemy" and drag "value" out of the loop and place it as the location.
+Our enemies are spawning now, but they're all hanging out in one location.
+
+Let's start each of them on a different **[ ! ]** tile. (Each location will be 
+stored in the **value** variable at some point as we move through
+the **for element** loop.)
+<hr/>
+
+🔲 Drag a ``||scene: place [mySprite] on top of tilemap col [0] row [0]||`` block 
+to the bottom of the **for element** loop.
+
+🔲 Change the sprite variable to **myEnemy** and replace the  ``||scene: tilemap col [0] row [0]||``
+argument block with the ``||variables: value||`` argument from the header of the
+**for element** loop.
+<br/>
 
 ```blocks
-let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let myEnemy: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -262,14 +266,14 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -287,21 +291,29 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         a b b b b b b b b b b b b b b a
         a a a a a a a a a a a a a a a a
         `, SpriteKind.Enemy)
-    tiles.placeOnTile(newEnemy, value)
+        // @highlight
+    tiles.placeOnTile(myEnemy, value)
 }
 ```
 
 ## Enemy follow
-Alright, now that we have our enemies and they're in the right locations, we want to make them move towards the player.
-Drag out a ``||sprites: set myEnemy follow sprite||`` block and place it inside the loop.
-Change the first variable to "newEnemy" an the second variable to "thePlayer".
-Press the "+" on the block and change the speed to be 30.
+💤 Did you notice that we have the laziest enemies ever? 💤
+
+Let's wake-up our sprites and get them following our player.
+<hr/>
+🔲 Snap a ``||sprites: set [myEnemy] follow [mySprite]||`` block 
+into the bottom of the **for element** loop.
+
+🔲 Change the first sprite argument to **myEnemy** and the second to **mySprite**.
+
+🔲 Press the **⊕** on the new block and change the speed to **30**.
+<br/>
 
 ```blocks
-let newEnemy: Sprite = null
-let thePlayer: Sprite = null
+let myEnemy: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -319,14 +331,14 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 info.setLife(3)
 for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
+    myEnemy = sprites.create(img`
         a a a a a a a a a a a a a a a a
         a b b b b b b b b b b b b b b a
         a b a a a a a a a a a a a a b a
@@ -344,67 +356,102 @@ for (let value of tiles.getTilesByType(myTiles.tile5)) {
         a b b b b b b b b b b b b b b a
         a a a a a a a a a a a a a a a a
         `, SpriteKind.Enemy)
-    tiles.placeOnTile(newEnemy, value)
-    newEnemy.follow(thePlayer, 30)
+    tiles.placeOnTile(myEnemy, value)
+    myEnemy.follow(mySprite, 30)
 }
 ```
 
-## Damage pt. 1
+## Damage pt. 1 @unplugged
 
-Now the enemies should be moving towards the player.
-However, nothing happens when they reach them.
-We want to add two different behaviors to our enemies:
+Now the enemies should be moving toward the player.
 
-1. If the enemy overlaps the player, the player takes damage and the enemy is destroyed
-2. If the player jumps on top of the enemy, the enemy is destroyed
+What happens when the enemies reach the player? **Nothing?!?**
+Well, that's no fun.  
+Let's add some code to make this more exciting.  
+😈👿😈 &nbsp;  😱  
+<hr/>
 
-We'll be using a sprite overlap event to make this happen!
+**Our player and enemies might meet under a couple of different** 
+[**_conditions_**](#condy "thing we need to know before deciding what happens next"):
+
+1. **If the player jumps on an enemy, the enemy is destroyed**
+
+2. **If the player runs into an enemy, 
+the player takes damage and the enemy is destroyed**
+
+<hr/>
+We'll need an **on sprite overlap** event to know if these happen!
 
 ## Damage pt. 2
+In both overlap cases, we want to destroy the enemy sprite...so 
+let's code that part first.  
+💥👿💥
+<hr/>
 
-Drag out an ``||sprites: on sprite of kind overlaps otherSprite of kind||`` block and place it on the workspace.
-Leave the first kind as Player and change the second kind to Enemy.
+🔲 From the ``||sprites: Sprites||`` category, drag an 
+``||sprites: on [sprite] of kind [Player] overlaps [otherSprite] of kind [Player]||`` 
+[__*event*__](#eventTime "element that makes something happen when a certain action is performed")
+ container into the workspace.
 
-```blocks
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-})
-```
+🔲 Leave the first kind as **Player** and change the second kind to **Enemy**.
 
-## Damage pt. 3
+🔲 Snap a ``||sprites: destroy [mySprite]  ⊕||`` block into the new event container.
 
-In both overlap cases, we want to destroy the enemy sprite.
-This is important because if we do not destroy it, the overlap will keep happening on every game update.
-Drag out a ``||sprites: destroy sprite||`` block and place it inside our overlap event.
-Drag the "otherSprite" variable from the overlap event and place it on top of the variable in the destroy block.
+🔲 Drag the ``||variables: otherSprite||`` argument from the **on sprite overlaps** 
+event to replace the ``||variables: mySprite||`` variable inside the destroy block.
 
-```blocks
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    otherSprite.destroy()
-})
-```
-
-## Damage pt. 4
-
-There are two types of overlaps we can have:
-1. The player is jumping on top of the enemy
-2. The player is hit by the enemy
-We'll use an ``||logic:if then||`` block to decide between the two.
-Drag one out and place it inside the overlap event
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
-    if (false) {
+})
+```
+
+## Damage pt. 4 @unplugged
+
+❗ Here comes the exciting part ❗
+
+We need to figure out whether the enemy was **jumped on** or **run into**.  
+**_THEN_**, based on that 
+[**_condition_**](#condy "thing we need to know before deciding what happens next"),
+ we need to run different code.
+
+The ``||logic:if <true> then||`` block can make that happen.  
+
+```block
+    if (true) {
     }
-})
 ```
+<hr/>
+
 
 ## Damage pt. 5
 
-To check if the player is jumping on the enemy, we'll check to see if the sprite's *bottom* is less than the enemy's *y*.
+🔲 Start by adding an ``||logic:if <true> then||`` container to the end
+of the newest **on sprite overlaps** container. 
+<hr/>
+The next part will take a little deep thinking  🤯
 
-Drag out a ``||logic:0 < 0||`` block and place it in the condition of the ``||logic:if then||``.
-In the left-hand side, place a ``||sprites:sprite x||`` block and change the x to bottom and the variable to the "sprite" variable from the event.
-Repeat this for the right-hand side but use "otherSprite" and "y" instead.
+In order to have reached the ``||logic:if <true> then||`` container, the 
+program must already know that an enemy has overlapped the player. 
+Now we just have to determine whether or not the player jumped on the enemy
+from the top.  
+
+In this case, we want to check that the bottom of the player was higher
+than the center (**y**) of the enemy. Here's how to do that:
+
+🔲 Drag out a ``||logic:0 < 0||`` logic argument block and snap it into
+``||logic:if <true> then||`` to replace the ** `<true>` ** argument.
+
+🔲 On the left-hand side of the **<**, place a ``||sprites:[mySprite] [x]||`` block and change 
+the **x** to **bottom**, and replace **mySprite** with the **sprite** 
+variable from the **on sprite overlaps** header.
+
+🔲 Right-click on the logic argument that you just finished to duplicate it. 
+
+🔲 Place the duplicate block to the right of the **<**. Replace **bottom** 
+with **y** and replace **sprite** with **otherSprite**.  
+<br/>
+
 
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -414,24 +461,84 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 ```
 
-## Damage pt. 6
-Let's make the player bounce when the jump on the enemy.
-Drag out a ``||sprites:set sprite x to||`` and change the variable to "sprite", the dropdown to "vy (velocity y)", and the value to -100.
+## Damage pt. 5.5
+To add more style, let's make the player bounce after they've jumped on an enemy.
+<hr/>
 
-Press the "+" button on the ``||logic:if then||`` block to add an else condition.
-Inside of the else, place a ``||info: change life by -1||`` block.
+🔲 Snap a ``||sprites:set [mySprite] [x] to ||`` block into the empty **if/then** 
+logic container and replace **mySprite** with **sprite**.
+
+🔲 Replace **x** with **vy (velocity y)** using the dropdown menu.
+
+🔲 Change the value from **0** to **-100**.  
+<br/>
+
+
+```blocks
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    if (sprite.bottom < otherSprite.y) {
+        sprite.vy = -100
+    } 
+})
+```
+
+
+## Damage pt. 6 @unplugged
+
+Now we've written code that checks if the player has bounced on an enemy.  
+**But what if it didn't?**
+
+We need to add an option in case the player and enemy overlapped in a 
+different way.  This catch-all condition is called an **else** clause. 
+<hr/>
+
+To add an **else** clause to our **if/then** logic, simply press
+the **⊕** at the bottom-left corner of the **if/then** container and one will appear!
+
+
+```block
+
+  sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
+    otherSprite.destroy()
+    // @highlight
+    if (sprite.bottom < otherSprite.y) {
+        sprite.vy = -100
+    } else {
+    }
+})
+```
+
+## Damage pt. 6.6
+
+Now that we have an **else** clause, we can use it
+for anything that needs to run when the player and enemy
+overlap in a non-jumping way. 
+<hr/>
+
+🔲 To remove a life from the player under that condition, 
+snap a ``||info: change life by [-1]||`` block into the empty **else** clause.  
+<br/>
+
+```ghost
+        info.changeLifeBy(-1)
+```
+
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     if (sprite.bottom < otherSprite.y) {
         sprite.vy = -100
     } else {
+    // @highlight
         info.changeLifeBy(-1)
     }
 })
 ```
 
 ## Finish
-Great! We've now finished our basic enemies.
-Try playing through the level and defeating all of the enemies.
-Also, open up the tilemap editor and see what happens if you add more spawn points.
+🔥 Fantastic 🔥
+
+The basic enemies tutorial is complete!  
+Try defeating the level as is, then open the tilemap editor 
+and see what happens if you add more spawn points.

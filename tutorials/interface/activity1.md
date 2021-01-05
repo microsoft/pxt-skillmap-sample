@@ -4,7 +4,7 @@
 
 ## Introduction @unplugged
 
-![Psyched Monkey](/static/tutorials/interface/monkey.png "Psyched Monkey is Ready!" )
+![Psyched Monkey](/static/skillmaps/interface/interface/monkey.png "Psyched Monkey is Ready!" )
 
 *Are you ready to start coding your own games?* 
 
@@ -41,7 +41,7 @@ click the* <br />
 
 ## Using the workspace
 
-Now let's talk about your [*workspace*](#workIt "The area where you build code").
+Now let's talk about your [__*workspace*__](#workIt "The area where you build code").
 
 Your workspace is the area below the instructions where you'll connect blocks to build your program. 
 Not all blocks will connect with one another, but we'll talk more about that later.
@@ -71,7 +71,7 @@ Blocks can be dragged out from the toolbox, connected, duplicated, and deleted.
 
 Keep going to learn more about blocks.
 
-![Block Animation](/static/tutorials/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
+![Block Animation](/static/skillmaps/interface/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
 
 
 
@@ -107,7 +107,7 @@ are both red, but they live inside the ``||sprites:Sprites||`` category.
 <hr/>
 
 **Try:** Bring a ``||variables:set [my sprite] to [ ] of kind [player]||`` into the ``||loops:on start||`` block and 
-play around with it until your [*sprite*](#sprote "A 2-D image that moves on the screen") shows on the screen.
+play around with it until your [__*sprite*__](#sprote "A 2-D image that moves on the screen") shows on the screen.
 
 >>*Tip: Drag the ``||game:splash "___"||`` out of the ``||loops:on start||`` block
 and drop it back into the toolbox to delete it so your sprite will be revealed!
@@ -138,7 +138,7 @@ scene.setBackgroundColor(5)
 
 Now let's look at the different types of blocks and how to use them. 
 
-First, there are [*container blocks*](#blockIt "Blocks that hold other blocks"). 
+First, there are [__*container blocks*__](#blockIt "Blocks that hold other blocks"). 
 Container blocks have an edge at both the the top and bottom with an open space
 in the middle that allows other blocks to snap inside. Container blocks control 
 *when* the code inside runs. Here is an example:
@@ -168,7 +168,7 @@ mySprite.startEffect(effects.spray)
 ```
 
 
-Next, there are [*standard blocks*](#sBlockIt "Single line blocks that make up the majority of most programs"). 
+Next, there are [__*standard blocks*__](#sBlockIt "Single line blocks that make up the majority of most programs"). 
 Standard blocks are single-line blocks with notches at the top and bottom that
 allow them to click-in between other pieces. These blocks run in order from top 
 to bottom within the container that they're placed.
@@ -195,19 +195,19 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 
 
-## Parameter Blocks
+## Argument Blocks
 
-Finally, we have [*parameter blocks*](#pBlockIt "special pieces that add information to other blocks"). 
-Parameter blocks are special pieces that add information to other
+Finally, we have [__*argument blocks*__](#aBlockIt "special pieces that add information to other blocks"). 
+Argument blocks are special pieces that add information to other
 blocks. Sometimes they're pointy, sometimes they're rounded,
-but they always need another block to snap into. Parameter blocks look something like this:
+but they always need another block to snap into. Argument blocks look something like this:
 
-![Parameter Blocks](/static/tutorials/interface/parameter-blocks.png "This is what the shape of a parameter block looks like" )
+![Argument Blocks](/static/skillmaps/interface/interface/parameter-blocks.png "This is what the shape of an argument block looks like" )
 
 <hr/>
 **Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
 ``||controller:on [A] button pressed ||`` container, <br/>
-then find the ``||game: ask for number [" "] ||`` parameter to pop inside.
+then find the ``||game: ask for number [" "] ||`` argument to pop inside.
 
 <hr/>
 

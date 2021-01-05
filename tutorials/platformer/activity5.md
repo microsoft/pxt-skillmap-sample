@@ -35,15 +35,31 @@
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAyMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAwMDEwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile1",
             "myTiles.tile3",
             "myTiles.tile4",
-            "myTiles.tile5"
+            "myTiles.tile5",
+            "myTiles.tile2"
         ]
     },
+    
+    "level2": {
+        "id": "level2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwNDAwMDAwMDAwMDAwMDAwMDAwMTAxMDUwMDAwMDEwMTAwMDAwMDAwMDEwMDAwMDAwMDAwMDAwMTAwMDAwMDAwMDUwMTAxMDEwMDAwMDEwMDAxMDUwNTAxMDEwMTAwMDAwMDAxMDEwMDAwMDAwMDAwMDAwMTAxMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDUwNTAxMDAwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA1MDUwNTA1MDAwMTAwMDEwMDAxMDUwNTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMjIwMDIwMDIwMDIwMDAwMDAwMDIwMDAwMjIwMjIwMjAwMDIyMDIwMDIyMDAwMDAwMjIwMDAwMDAyMjIyMjIwMDAyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMDIwMjAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile1",
+            "myTiles.tile3",
+            "myTiles.tile4",
+            "myTiles.tile5",
+            "myTiles.tile2"
+        ]
+    },
+
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
@@ -52,16 +68,59 @@
 }
 ```
 
+
+
+
+
+
 ```template
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
     game.over(false)
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
-    game.over(true)
+    startNextLevel()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    thePlayer.vy = -200
+    mySprite.vy = -200
 })
+function startNextLevel () {
+    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+        value.destroy()
+    }
+    currentLevel += 1
+    if (currentLevel == 1) {
+        scene.setBackgroundColor(11)
+        tiles.setTilemap(tilemap`level`)
+    } else if (currentLevel == 2) {
+        scene.setBackgroundColor(9)
+        tiles.setTilemap(tilemap`level2`)
+    } else {
+        game.over(true)
+    }
+    tiles.placeOnRandomTile(mySprite, myTiles.tile3)
+    for (let value of tiles.getTilesByType(myTiles.tile5)) {
+        myEnemy = sprites.create(img`
+            a a a a a a a a a a a a a a a a 
+            a b b b b b b b b b b b b b b a 
+            a b a a a a a a a a a a a a b a 
+            a b a a b b a a a a b b a a b a 
+            a b a a a a b a a b a a a a b a 
+            a b a a a a a a a a a a a a b a 
+            a b a a a b a a a a b a a a b a 
+            a b a a a b a a a a b a a a b a 
+            a b a a a a a a a a a a a a b a 
+            a b a a a a a a a a a a a a b a 
+            a b a a a b b b b b b a a a b a 
+            a b a a b a a a a a a b a a b a 
+            a b a a a a a a a a a a a a b a 
+            a b a a a a a a a a a a a a b a 
+            a b b b b b b b b b b b b b b a 
+            a a a a a a a a a a a a a a a a 
+            `, SpriteKind.Enemy)
+        tiles.placeOnTile(myEnemy, value)
+        myEnemy.follow(mySprite, 30)
+    }
+}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     if (sprite.bottom < otherSprite.y) {
@@ -70,85 +129,74 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         info.changeLifeBy(-1)
     }
 })
-let newEnemy: Sprite = null
-let thePlayer: Sprite = null
-scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3
-    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3
-    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3
-    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
-    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
-    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
+let myEnemy: Sprite = null
+let currentLevel = 0
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
+    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3 
+    3 1 3 3 1 3 3 1 3 1 1 3 3 3 1 3 
+    3 1 3 3 1 3 3 1 3 3 1 3 3 3 1 3 
+    3 1 3 3 1 1 1 3 3 3 1 3 3 3 1 3 
+    3 1 3 3 1 3 3 3 3 3 1 3 3 3 1 3 
+    3 1 3 3 1 3 3 3 3 1 1 1 3 3 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3 
+    3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 
+    3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
-tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
-for (let value of tiles.getTilesByType(myTiles.tile5)) {
-    newEnemy = sprites.create(img`
-        a a a a a a a a a a a a a a a a
-        a b b b b b b b b b b b b b b a
-        a b a a a a a a a a a a a a b a
-        a b a a b b a a a a b b a a b a
-        a b a a a a b a a b a a a a b a
-        a b a a a a a a a a a a a a b a
-        a b a a a b a a a a b a a a b a
-        a b a a a b a a a a b a a a b a
-        a b a a a a a a a a a a a a b a
-        a b a a a a a a a a a a a a b a
-        a b a a a b b b b b b a a a b a
-        a b a a b a a a a a a b a a b a
-        a b a a a a a a a a a a a a b a
-        a b a a a a a a a a a a a a b a
-        a b b b b b b b b b b b b b b a
-        a a a a a a a a a a a a a a a a
-        `, SpriteKind.Enemy)
-    newEnemy.ay = 500
-    tiles.placeOnTile(newEnemy, value)
-    newEnemy.vx = -30
-}
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
+scene.cameraFollowSprite(mySprite)
+info.setLife(3)
+startNextLevel()
+
 ```
 
-## Start
+## Start @unplugged
 
-In this lesson we'll learn how to make enemies with a simple AI.
+Did you feel like the enemies in your last game were a little...well...stupid?
 
-Take a look at the code in this program.
-It's already spawning enemies from the purple "!" tiles in the game.
-When the enemies spawn, they immediately start moving to the left and get stuck on a wall.
-We're going to add some logic to help these enemies move around without getting trapped.
+In this lesson we'll learn how to make enemies smarter, using simple [_**AI**_](#fakeSmart "artificial intelligence").
+
+![Levels and Functions](/static/skillmaps/platformer/platformer5.gif "And now for something completely different!  And a little bit the same.")
 
 
-## AI Rules
 
-The enemies we create will follow two rules:
+## AI Rules @unplugged
 
-1. If the enemy hits a wall, it will turn around
-2. If the enemy is walking towards a wall, it will try to jump over it
+The code for this program spawns enemies from the purple **[ ! ]** tiles.
+Once the enemies spawn, they immediately start moving to the left and get 
+stuck on a wall...so, let's add logic to prevent the enemies from getting stopped.
+<hr/>
+**The enemies will need to follow two rules:**
 
-We can think of these rules as a *condition* and an *action*.
+1. **If the enemy is about to run into a wall, it will try to jump over it**  
+2. **If the enemy does hit a wall, it will turn around**
+
+<hr/>
+
+Each of these rules has a *condition* and an *action*.  
+
 If the condition is met, the action will happen.
-We'll need to write some code to check each of the conditions in every game update.
+We'll need to write code to constantly check fore each of these conditions.
 
 ## Looping pt. 1
 
-Drag out an ``||game:on game update||`` block and place it on the workspace.
+To get started, we'll need an **on game update** container to trigger code 
+every time something in the game changes. Inside, we'll need a loop to check on 
+each of the enemies, one-by-one.   
+<hr/>
 
-We want to loop over all of our enemies inside of this event.
-For that, we'll be using a ``||loops: for value of list||`` block.
-Drag one out and place it inside the ``||game:on game update||``.
+🔲 Drag out an ``||game:on game update||`` block and place it on the workspace.
+
+🔲 Snap a ``||loops: for element [value] of [list]||`` block into the 
+**on game update** container.
 
 ```blocks
 let list: number[] = [];
@@ -160,99 +208,51 @@ game.onUpdate(function () {
 
 ## Looping pt. 2
 
-On each update, we want our loop to run for every enemy in the game.
-To get a list of enemies, we can use the ``||arrays:array of sprite of kind||`` block from the Arrays category.
+On each update, we want our loop to check on every enemy in the game.
+To do this, we'll use the same method as in previous tutorials.
+<hr/>
 
-Drag it out and place it on top of the list variable in the ``||loops: for value of list||`` block.
-Change the kind dropdown to Enemy.
+🔲 From the ``||arrays:Arrays||`` category, grab the ``||sprites:array of sprite of kind||`` 
+block from inside the **set sprite list to** block.
 
-```blocks
-game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-    }
-})
-```
 
-## Wall bouncing pt. 1
+🔲 Drop it into the **for element** loop to replace the ``||variables: list||`` variable.
 
-Let's add some code for our first rule:
-
-> *If the enemy hits a wall, it will turn around*
-
-First, we need to detect if our enemy is hitting a wall.
-We'll use an ``||logic:if true||`` block to run some code only if that condition is met.
-Drag out an ``||logic:if true||`` block and place it inside of our loop.
+🔲 Change the "kind" dropdown to **Enemy**.  
+<br/>
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (false) {
-        }
-    }
-})
-```
-
-## Wall bouncing pt. 2
-
-To check if the enemy is hitting a wall, we can use the ``||scene: sprite is hitting wall left||`` block.
-Drag that block into the condition for the ``||logic:if true||``.
-For the first argument, drag the "value" from the loop and place it on top of the sprite variable.
-
-Inside the ``||logic:if true||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vx (velocity x)" and the value to 30.
-For the sprite argument, drag out another "value" from the loop and place it on top.
-
-```blocks
-game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        }
-    }
-})
-```
-
-## Wall bouncing pt. 3
-
-Now let's handle if the enemy is moving *right*.
-Press the "+" button on ``||logic:if true||`` twice to add an "else if" condition.
-Now drag out the same blocks as you did for left, but this time select "right" and change the "vx (velocity x)" to be -30.
-
-Take a look at your game! The enemies should be bouncing left and right.
-
-```blocks
-game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        }
-        else {
-        }
     }
 })
 ```
 
 ## Jumping pt. 1
 
-Let's take a look at our second rule
+Let's start the code for our first rule:
 
-> *If the enemy is walking towards a wall, it will try to jump over it*
+> 1. **If the enemy is about to run into a wall, it will try to jump over it**  
+<hr/>
 
-For this rule, we're first goint to need to make sure our enemy is on the ground.
-Press the "+" button on ``||logic:if true||`` to add an "else if" condition.
-Place another ``||scene: sprite is hitting wall left||`` block inside the condition and change the variable to "value" and the direction to "bottom".
+🔲 We're going to need to check **if** something is true. To do that, drag
+an ``||logic: if <true> then||`` logic container into the empty **on game update** container.
+
+🔲 Now make sure the enemy isn't already jumping by replacing 
+``||logic: <true>||`` with ``||scene: is [mySprite] hitting wall [left]||`` in the empty
+**if/then** header.  
+
+🔲 Replace ``||variables: mySprite||`` with ``||variables: list||`` to make sure 
+it's checking the current enemy.
+
+🔲 Change **left** to **bottom** to check that the bottom of the sprite is on the ground.
+
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
-        }
-        else {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
+           
         }
     }
 })
@@ -260,112 +260,93 @@ game.onUpdate(function () {
 
 ## Jumping pt. 2
 
-Once again, we need to check both directions that the enemy can be walking.
-Drag out another ``||logic:if true||`` and place it inside of the "is hitting wall bottom" check.
+Now that we know the enemy is on the ground, we will have two conditions 
+when it needs to jump.  
+ - If it's moving to the left and there's a wall to the left
+ - If it's moving to the right and there's a wall to the right 
+
+We'll figure out whether either situation is happening using a new **if/then** statement.
+<hr/>
+
+🔲 Drag out another ``||logic:if <true> then||`` block and place it inside of the 
+empty one already in the **for element** loop.
+
+🔲 To check whether two things are true at the same time (moving left **and** wall to the left), 
+pull a ``||logic: < > and < >||`` in to replace the ``||logic:<true>||`` argument 
+in the new **if/else** statement.
+
+🔲 In the right blank (to the right of the **=**) snap a ``||scene: tile to the [left] of [mySprite] is [ ]||``
+
+🔲 Replace ``||variables: mySprite||`` with ``||variables: value||`` and replace the blank
+tile with the **[X]**. 
+
+🔲 Pop a ``||logic: [0] [<] [0]||`` block to the left of the **=**.   
+We'll do more with that in the next step.  
+
+<br/>
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
-            if (false) {
-            }
-        }
-        else {
-        }
-    }
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
+            if (0 < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
+               
+            } 
 })
 ```
 
 ## Jumping pt. 3
 
-To check if the enemy is approaching a wall in a direction, we need to check two things:
+We're already checking to see if the next tile to the left is a wall,
+but that only matters if the enemy is traveling left.  
 
-1. Is the enemy vx (velocity x) moving it in that direction
-2. Is the next tile in that direction a wall
+Let's add the code to see if the enemy is moving left.
+<hr/>
+In the Arcade system, left is negative and right is positive. To check that the
+sprite is moving left, you must make sure its velocity in the x direction
+is negative.  
 
-Because we have two things to check, we'll use an ``||logic:and||`` block.
-Drag one out and place it in the condition for the ``||logic:if true||``.
+🔲 Grab a ``||sprites: [mySprite] [x]||`` argument block to replace the 
+first **0** in ``||logic: [0] [<] [0]||``.
 
-```blocks
-game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
-            if (false && false) {
-            }
-        }
-    }
-})
-```
+🔲 Replace ``||variables: mySprite||`` with ``||variables: value||`` and replace 
+**x** with **vy (velocity y)**.   
+<br/>
 
-## Jumping pt. 4
-
-First let's check the vx (velocity x) of the enemy to see if they are moving left.
-In MakeCode Arcade, this means that we need to check if the vx of the sprite is negative.
-Drag out a ``||logic:0 < 0||`` block and place it in the first part of our ``||logic:and||``.
-Drag out a ``||sprites:sprite x||`` block and place it in the left-hand side of the ``||logic:0 < 0||``.
-Change the variable to be the "value" from the loop.
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
-            if (value.vx < 0 && false) {
-            }
-        }
-    }
-})
-```
-
-## Jumping pt. 5
-
-Now let's check for a wall.
-In the second part of the ``||logic:and||`` block, place a ``||scene: tile to left of sprite is||`` block.
-Change the variable to be the "value" from the loop and the tile to be the ground/wall tile in our game.
-
-```blocks
-game.onUpdate(function () {
-    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
-            }
+            }    
         }
     }
 })
 ```
+
 
 ## Jumping pt. 6
 
-Inside the ``||logic:if true||`` place a ``||sprites:set sprite x to||`` block and change "x" to "vy (velocity y)" and the value to -150.
-For the sprite argument, drag out another "value" from the loop and place it on top.
+If the computer gets to this point in the code, it means it's time for the
+enemy to jump. 
+<hr/>
+
+🔲 Inside the newly built **if/else** statement, connect a ``||sprites:set [mySprite] [x] to [0]||`` block.
+
+🔲 Replace ``||variables: mySprite||`` with ``||variables: value||`` and replace 
+``||sprites: x||`` with ``||sprites: vy (velocity y)||``. 
+
+🔲 Change **0** to **-150**.  
+<br/>
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
                 value.vy = -150
-            }
-        }
+            } 
     }
 })
 ```
@@ -373,29 +354,125 @@ game.onUpdate(function () {
 
 ## Jumping pt. 7
 
-Great! Now our enemies will jump when they are heading to the left.
-To make this also work for the right, add an "else if" condition to the ``||logic:if true||`` and drag out the same blocks as before.
-This time, change "left" to "right" and "<" to ">".
+Next, we'll add the code to do the same thing to the right.
+<hr/>
+
+🔲 Click twice on the **⊕** button at the bottom of the innermost **if/else**
+statement that we've just completed, to add an **else** then an **else if** clause.
+
+🔲 Duplicate the entire **and** statement, then drop the duplicate into the
+header of the **else if** clause.  
+
+🔲 In the new clause, change **<** to **>** and **left** to **right**.
+
+🔲 Duplicate the ``||sprites:set [value] [vy (velocity y)] to [-150]||`` block 
+and snap the copy inside the empty **else if** statement.
+
+🔲 We're done with this **if/else if** statement now, so you can click the 
+**⊖** beside the **else** clause to remove it from the block.
+
+<br/>
 
 ```blocks
 game.onUpdate(function () {
     for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
-        if (value.isHittingTile(CollisionDirection.Left)) {
-            value.vx = 30
-        } else if (value.isHittingTile(CollisionDirection.Right)) {
-            value.vx = -30
-        } else if (value.isHittingTile(CollisionDirection.Bottom)) {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
             if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
                 value.vy = -150
             } else if (value.vx > 0 && value.tileKindAt(TileDirection.Right, myTiles.tile1)) {
                 value.vy = -150
             }
+        } 
+    }
+})
+```
+
+
+## Wall bouncing pt. 1
+
+We've completed the code for rule #1, now let's take a look at rule #2.
+
+> 2. **If the enemy does hit a wall, it will turn around**
+
+<hr/>
+The case for an enemy not running into a wall while traveling on the ground has been handled.
+Next, we need to add cases for when an enemy runs into a wall on the left or right
+while it's already trying to jump.
+
+🔲 Click three times on the **⊕** button at the bottom of the outermost **if/else**
+statement (**if <is value hitting wall bottom> then**) to add an **else** and two **else if** clauses.
+
+🔲 Duplicate the ``||scene: is [value] hitting wall [bottom]||`` argument twice and 
+place a copy in each of the new **else if** headers.
+
+🔲 Change **bottom** to **left** in the first **else if**.
+
+🔲 Change **bottom** to **right** in the second **else if**.  
+<br/>
+
+```blocks
+game.onUpdate(function () {
+    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
+            if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
+                value.vy = -150
+            } else if (value.vx > 0 && value.tileKindAt(TileDirection.Right, myTiles.tile1)) {
+                value.vy = -150
+            }
+        } else if (value.isHittingTile(CollisionDirection.Left)) {
+
+        } else if (value.isHittingTile(CollisionDirection.Right)) {
+ 
         }
     }
 })
 ```
 
+## Wall bouncing pt. 2
+
+Finally, we need to add the code to make the enemies turn right if they were
+going left and left if they were going right.
+<hr/>
+
+🔲 Make two duplicates of one of the ``||sprites:set [value] [vy (velocity y)] to [-150]||`` blocks from the original **if/then**
+clause and snap one into each of the empty **else if** clauses.
+
+🔲 For the **set value** block inside the first **else if** clause 
+(**else if <is value hitting wall left> then**), change 
+**vy (velocity y)** to **vx (velocity x)** and change **-150** to **30**.
+
+🔲 For the **set value** block inside the second **else if** clause 
+(**else if <is value hitting wall right> then**), change 
+**vy (velocity y)** to **vx (velocity x)** and change **-150** to **-30**.
+
+
+```blocks
+game.onUpdate(function () {
+    for (let value of sprites.allOfKind(SpriteKind.Enemy)) {
+        if (value.isHittingTile(CollisionDirection.Bottom)) {
+            if (value.vx < 0 && value.tileKindAt(TileDirection.Left, myTiles.tile1)) {
+                value.vy = -150
+            } else if (value.vx > 0 && value.tileKindAt(TileDirection.Right, myTiles.tile1)) {
+                value.vy = -150
+            }
+        } else if (value.isHittingTile(CollisionDirection.Left)) {
+            value.vx = 30
+        } else if (value.isHittingTile(CollisionDirection.Right)) {
+            value.vx = -30
+        }
+    }
+})
+```
+
+
 ## Finish
 
-Alright, we've created enemies that know how to get around our world.
-Try opening the tilemap editor and making your own level.
+🎊 Congratulations 🎊
+
+You've created an arcade game with levels, interactive tilemaps, and 
+intelligent enemies! Now make sure to play through it, then share with friends.
+
+Arcade has many options that haven't been explored here.  If you have time,
+you should click out to the main Arcade page and play with our full editor
+to make a game all of your own!
+

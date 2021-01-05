@@ -1,4 +1,6 @@
+
 # Tiles and Camera
+
 
 ```jres
 {
@@ -27,16 +29,22 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile5": {
+        "data": "hwQQABAAAACqqqqqqqqqqrq7u7u7u7uruqqqqqqqqqu6qqqqqqqqq7qqqqqqqqqruqqqqqqqqqu6qrurqqqqq7q6u7u7uqururq7u7u6q6u6qrurqqqqq7qqqqqqqqqruqqqqqqqqqu6qqqqqqqqq7qqqqqqqqqruru7u7u7u6uqqqqqqqqqqg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAzMDAwMTAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMjAyMDIwMjAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMjIwMjAwMjIwMjAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMjAyMjAwMDAwMDAwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
+        "data": "MTAxZTAwMGEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA0MDAwMDAwMDAwMDAwMDQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzMDAwMDAwMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTAxMDEwMDAwMDEwMDAwMDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAwMDUwMDAwMDAwMDAwMDUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjIwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile1",
-            "myTiles.tile2",
             "myTiles.tile3",
-            "myTiles.tile4"
+            "myTiles.tile4",
+            "myTiles.tile5",
+            "myTiles.tile2"
         ]
     },
     "*": {
@@ -49,11 +57,11 @@
 
 ```template
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    thePlayer.vy = -200
+    mySprite.vy = -200
 })
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -71,29 +79,35 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
 ```
 
-## Start
+## Start @unplugged
 
-Alright, let's modify our simple platformer so that we have a way to lose and a way to win.
 
-This time we'll also be using a tilemap that is bigger than the screen.
+In this tutorial, we'll create a way to win or lose our platformer game.
+
+![Editing our platformer](/static/skillmaps/platformer/platformer2.gif "Time to live dangerously!")
+
 
 ## Camera
 
-Take a moment to move the player sprite around in the simulator.
-Right now, the camera isn't following when the player moves off screen.
-We can fix that by using a ``||scene:camera follow sprite||`` block.
+Take a moment to move the player sprite around in the simulator.  
 
-Drag one to the bottom of ``||loops:on start||`` and change the variable dropdown to thePlayer.
+Right now, the camera isn't following when the player moves off screen.  
+We can fix that!
+<hr/>
+
+🔲 Drag ``||scene:camera follow sprite [mySprite]||`` into the bottom 
+of the ``||loops:on start||`` container.
+<br/>
 
 ```blocks
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -111,32 +125,38 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
+// @highlight
+scene.cameraFollowSprite(mySprite)
 ```
 
-## Start Tile Pt. 1
+## Start Tile 
 
-Great! Now we can walk around and the camera will follow.
-However, our player is starting in a rather precarious position!
+🎥 Now we can move around and the camera will follow 🎥  
 
-By default, all sprites spawn at the middle of the screen.
-Let's change our game so that we start on a tile we choose instead.
+Unfortunately, our player is starting in dangerous position!
 
-## Start Tile Pt. 2
+By default, all sprites spawn in the middle of the screen.
+Let's change the game so your player starts somewhere safe.
+<hr/>
 
-Drag out a ``||scene:place sprite on top of random tile||`` block and place it at the end of ``||loops:on start||``.
-Change the sprite argument to be thePlayer and change the checkerboard tile to be the green flag.
+🔲 Snap a ``||scene:place [mySprite] on top of random [ ]||`` block 
+into the bottom of the ``||loops:on start||`` container.
 
-Now our sprite starts on that tile!
-If we wanted to start somewhere else, all we need to do is change the tilemap.
+🔲 Click the checkerboard tile and replace it with the green flag.
+<hr/>
+**Now your sprite starts on the green flag tile!**  
+
+>> *Tip: If you want your sprite to start somewhere else, 
+you can move the green flag by editing the
+[__tilemap__](#tilemp "a grid of square tiles that makes up our background").
 
 ```blocks
-let thePlayer: Sprite = null
+let mySprite: Sprite = null
 scene.setBackgroundColor(11)
-thePlayer = sprites.create(img`
+mySprite = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 1 3 3 3 3 3 3 3 3 3 3 3 3 1 3
@@ -154,29 +174,28 @@ thePlayer = sprites.create(img`
     3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     `, SpriteKind.Player)
-thePlayer.ay = 500
-controller.moveSprite(thePlayer, 100, 0)
+mySprite.ay = 500
+controller.moveSprite(mySprite, 100, 0)
 tiles.setTilemap(tilemap`level`)
-scene.cameraFollowSprite(thePlayer)
-tiles.placeOnRandomTile(thePlayer, myTiles.tile3)
+scene.cameraFollowSprite(mySprite)
+// @highlight
+tiles.placeOnRandomTile(mySprite, myTiles.tile3)
 ```
 
 ## Game Over Pt. 1
 
-Now, let's add some *danger* to this game.
-When the player overlaps the skull tile, we'll trigger a Game Over.
+💀 Time to add some *danger* to this game 💀  
 
-Drag out a ``||scene:on sprite of kind player overlaps tile||`` block and place it on the workspace.
-Change the tile image from the checkerboard to the skull tile.
+When the player overlaps the skull tile, we'll trigger a "GAME OVER".
+<hr/>
 
-```blocks
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
-})
-```
+🔲 Drag the ``||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||`` container 
+into the workspace.
 
-## Game Over Pt. 2
+🔲 Click the checkerboard image and change it to the skull tile.
 
-Now let's place a ``||game:game over||`` block inside of the ``||scene:on sprite of kind player overlaps tile||``.
+🔲 Snap a ``||game:game over <LOSE>||`` block into the new container.
+<br/>
 
 ```blocks
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
@@ -186,19 +205,17 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location
 
 ## You Win Pt. 1
 
-Now we have a way to lose, let's also add a way to win.
+🎈 We have a way to lose, let's add a way to win 🎈  
+<hr/>
 
-Drag out another ``||scene:on sprite of kind player overlaps tile||`` block and place it on the workspace.
-This time change the tile image from the checkerboard to the trophy tile.
+🔲 Drag another ``||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||`` 
+container into the workspace.
 
-```blocks
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
-})
-```
+🔲 This time, change the checkerboard to the trophy tile.
 
-## You Win Pt. 2
-
-Now let's place a ``||game:game over||`` block inside of the ``||scene:on sprite of kind player overlaps tile||``. Change the win value from false to true.
+🔲 Snap a ``||game:game over LOSE>||`` block into the new container and toggle 
+the &lt;LOSE&gt; switch to &lt;WIN&gt;!
+<br/>
 
 ```blocks
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location) {
@@ -208,8 +225,13 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile4, function (sprite, location
 
 ## Finished
 
-That's it!
+**That's it!**
+
 Now we have a simple platformer that has a way to win and a way to lose.
 
-If you like, open the tilemap editor and design your own level.
-Make sure you use the wall tool to mark walls!
+If you like, open the [__tilemap__](#tilemp "a grid of square tiles that makes up our background") 
+editor and design your own level. 
+<hr/> 
+
+>> *Tip: Make sure you use the wall tool to mark anything you don't want your sprites
+to travel through!*
