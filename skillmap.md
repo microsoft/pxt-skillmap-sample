@@ -68,15 +68,6 @@
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity4
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity4.png
 
-<!-- ### space-activity5
-
-* name: Planets
-* type: tutorial
-* description: Space is big and empty! Add some planets and randomized objects to fill out the environment.
-* tags: intermediate, arrays
-
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity5
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity5.png -->
 
 
 ## platformer
