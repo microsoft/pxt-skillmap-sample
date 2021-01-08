@@ -156,9 +156,7 @@ block and drag it into the workspace. You will add to it in the next step.
 #### ~ tutorialhint
 
 ```blocks
-let mySprite: Sprite = null;
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    let mySprite: Sprite = null
 })
 ```
 
