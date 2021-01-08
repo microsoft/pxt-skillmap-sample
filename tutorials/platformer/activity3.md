@@ -167,7 +167,7 @@ location on the tilemap!
 👾 Time to spawn some enemies 👾 
 <hr/>
 
-🔲 Drag ``||sprites: set [mySprite2] to sprite [ ] of kind [player]||`` 
+🔲 Drag ``||variables: set [mySprite2] to sprite [ ] of kind [player]||`` 
 into the new loop.
 
 🔲 Click the **mySprite2** [__*variable*__](#varied "a label that holds the place for something that can change") 
@@ -175,6 +175,9 @@ and choose to create a **new variable** called **myEnemy**.
 
 🔲 Click the grey sprite rectangle inside the new block to draw an image for the enemy
 (or choose one from the gallery.)
+
+
+🔲 Set the sprite kind to **Enemy**  
 <br/>
 
 ```blocks
