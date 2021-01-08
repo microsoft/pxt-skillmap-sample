@@ -212,7 +212,7 @@ On each update, we want our loop to check on every enemy in the game.
 To do this, we'll use the same method as in previous tutorials.
 <hr/>
 
-🔲 From the ``||arrays:Arrays||`` category, grab the ``||sprites:array of sprite of kind||`` 
+🔲 From the ``||arrays:Arrays||`` category, grab the ``||sprites:array of sprites of kind||`` 
 block from inside the **set sprite list to** block.
 
 
@@ -310,7 +310,7 @@ is negative.
 first **0** in ``||logic: [0] [<] [0]||``.
 
 🔲 Replace ``||variables: mySprite||`` with ``||variables: value||`` and replace 
-**x** with **vy (velocity y)**.   
+**x** with **vx (velocity x)**.   
 <br/>
 
 
