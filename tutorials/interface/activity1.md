@@ -290,63 +290,6 @@ to the left!  Use the refresh button (🔄) to reload it, and play your
 game using the buttons you've programmed!
 
 
-```ghost
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    info.changeScoreBy(1)
-    game.over(false)
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
-    effects.confetti.startScreenEffect()
-    music.baDing.play()
-})
-let mySprite = sprites.create(img`
-    . . 4 4 4 . . . . 4 4 4 . . . . 
-    . 4 5 5 5 e . . e 5 5 5 4 . . . 
-    4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-    4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-    e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-    . e e 5 5 5 5 5 5 5 5 e e . . . 
-    . . e 5 f 5 5 5 5 f 5 e . . . . 
-    . . f 5 5 5 4 4 5 5 5 f . . f f 
-    . . f 4 5 5 f f 5 5 6 f . f 5 f 
-    . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
-    . . . f 4 5 5 5 5 5 5 4 4 5 f . 
-    . . . f 5 5 5 5 5 4 5 5 f f . . 
-    . . . f 5 f f f 5 f f 5 f . . . 
-    . . . f f . . f f . . f f . . . 
-    `, SpriteKind.Player)
-controller.moveSprite(mySprite)
-effects.clearParticles(mySprite)
-mySprite.say(game.ask("What's your name?"))
-mySprite.setPosition(0, 0)
-mySprite.setVelocity(50, 50)
-for (let index = 0; index < game.askForNumber(""); index++) {
-    let myEnemy: Sprite = null
-    mySprite.x += 0
-    myEnemy.follow(mySprite)
-    mySprite.destroy()
-}
-let projectile = sprites.createProjectileFromSprite(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, mySprite, 50, 50)
-
-```
-
 ## Conclusion @unplugged
 
 🎈 Congratulations 🎈 
