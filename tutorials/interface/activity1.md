@@ -205,7 +205,7 @@ but they always need another block to snap into. Argument blocks look something 
 ![Argument Blocks](/static/skillmaps/interface/parameter-blocks.png "This is what the shape of an argument block looks like" )
 
 <hr/>
-**Try:** Snap a ``||sprites:[mySprite] say [" "] ||`` block into the 
+**Try:** Snap a ``||sprites:[mySprite] say [" :) "] ||`` block into the 
 ``||controller:on [A] button pressed ||`` container, <br/>
 then find the ``||game: ask for number [" "] ||`` argument to pop inside.
 
