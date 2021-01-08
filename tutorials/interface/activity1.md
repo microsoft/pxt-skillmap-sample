@@ -144,6 +144,7 @@ in the middle that allows other blocks to snap inside. Container blocks control
 *when* the code inside runs. Here is an example:
 
 ```blocks
+
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 	
 })
@@ -155,6 +156,7 @@ block and drag it into the workspace. You will add to it in the next step.
 #### ~ tutorialhint
 
 ```blocks
+let mySprite: Sprite = null;
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     let mySprite: Sprite = null
 })
@@ -217,6 +219,7 @@ fit in certain types of spaces.
 
 #### ~ tutorialhint
 ```blocks
+let mySprite: Sprite = null;
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.say(game.askForNumber(""))
 })
