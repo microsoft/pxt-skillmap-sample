@@ -106,8 +106,8 @@ are both red, but they live inside the ``||sprites:Sprites||`` category.
 
 <hr/>
 
-**Try:** Bring a ``||variables:set [my sprite] to [ ] of kind [player]||`` into the ``||loops:on start||`` block and 
-play around with it until your [__*sprite*__](#sprote "A 2-D image that moves on the screen") shows on the screen.
+**Try:** Bring a ``||variables:set [my sprite] to [ ] of kind [player]||`` into the ``||loops:on start||`` block. Click on the grey sprite area to add a sprite, then 
+play around with your code until your [__*sprite*__](#sprote "A 2-D image that moves on the screen") shows on the screen.
 
 >>*Tip: Drag the ``||game:splash "___"||`` out of the ``||loops:on start||`` block
 and drop it back into the toolbox to delete it so your sprite will be revealed!
@@ -221,6 +221,62 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.say(game.askForNumber(""))
 })
 ```
+```ghost
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    info.changeScoreBy(1)
+    game.over(false)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    effects.confetti.startScreenEffect()
+    music.baDing.play()
+})
+let mySprite = sprites.create(img`
+    . . 4 4 4 . . . . 4 4 4 . . . . 
+    . 4 5 5 5 e . . e 5 5 5 4 . . . 
+    4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+    4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+    e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+    . e e 5 5 5 5 5 5 5 5 e e . . . 
+    . . e 5 f 5 5 5 5 f 5 e . . . . 
+    . . f 5 5 5 4 4 5 5 5 f . . f f 
+    . . f 4 5 5 f f 5 5 6 f . f 5 f 
+    . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+    . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+    . . . f 5 5 5 5 5 4 5 5 f f . . 
+    . . . f 5 f f f 5 f f 5 f . . . 
+    . . . f f . . f f . . f f . . . 
+    `, SpriteKind.Player)
+controller.moveSprite(mySprite)
+effects.clearParticles(mySprite)
+mySprite.say(game.ask("What's your name?"))
+mySprite.setPosition(0, 0)
+mySprite.setVelocity(50, 50)
+for (let index = 0; index < game.askForNumber(""); index++) {
+    let myEnemy: Sprite = null
+    mySprite.x += 0
+    myEnemy.follow(mySprite)
+    mySprite.destroy()
+}
+let projectile = sprites.createProjectileFromSprite(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, mySprite, 50, 50)
+
+```
 
 ## Putting it Together
 
@@ -232,7 +288,6 @@ Play around with them and see how they affect your game.
 >>*Tip: You can test your game whenever you want using the simulator
 to the left!  Use the refresh button (🔄) to reload it, and play your
 game using the buttons you've programmed!
-
 
 
 ## Conclusion @unplugged
