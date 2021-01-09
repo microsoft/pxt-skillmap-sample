@@ -35,7 +35,7 @@ flying object (or select one from the gallery.)
 <hr/>
 
 >>*Tip: Run your code in the simulator and launch a few projectiles 
-by pressing the* Ⓐ *button.  What happens?
+by pressing the* Ⓐ *button.  What happens?*
 
 
 ```blocks
