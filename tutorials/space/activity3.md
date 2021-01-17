@@ -167,7 +167,7 @@ We can make sure they all have the same effect using the
 
 ```blocks
 let myEnemy: Sprite = null
-game.onUpdateInterval(500, function () {
+game.onUpdateInterval(1000, function () {
     myEnemy = sprites.createProjectileFromSide(img`
         2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
         2 . . . . . . . . . . . . . . 2
