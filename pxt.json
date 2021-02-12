@@ -22,7 +22,7 @@
     ],
     "testFiles": [],
     "targetVersions": {
-        "target": "1.4.3",
+        "target": "1.3.44",
         "targetId": "arcade"
     },
     "supportedTargets": [
