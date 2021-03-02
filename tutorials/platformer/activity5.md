@@ -212,7 +212,7 @@ On each update, we want our loop to check on every enemy in the game.
 To do this, we'll use the same method as in previous tutorials.
 <hr/>
 
-🔲 From the ``||arrays:Arrays||`` category, grab the ``||sprites:array of sprites of kind||`` 
+🔲 From the ``||sprites:Sprites||`` category, grab the ``||sprites:array of sprites of kind||`` 
 block from inside the **set sprite list to** block.
 
 
