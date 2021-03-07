@@ -1,14 +1,14 @@
 # Beginner Arcade
 * name: Beginner's Guide to Arcade Games
 * description: Learn to create arcade games of your own by completing these tutorials.
-* infoUrl: https://microsoft.github.io/pxt-arcade/docs/skillmap/educator-info/basic-map-info
+* infoUrl: /skillmap/educator-info/basic-map-info
 
 
 
 ## Learn to Use Tutorial
 * name: Learn to Use MakeCode Arcade
 * description: Start here if you want to know the ins and outs of Arcade tutorials!
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/skillmap/certificates/understanding-arcade-tutorials.pdf
+* completionUrl: /skillmap/certificates/understanding-arcade-tutorials.pdf
 
 ### interface-activity1
 
@@ -17,8 +17,8 @@
 * description: Intro to the features and vocabulary used in Arcade tutorials.
 * tags: easy
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/interface/activity1 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/interface/activity1.png
+* url: /skillmap/interface/activity1 
+* imageUrl: /static/skillmap/interface/activity1.png
 
 
 
@@ -27,7 +27,7 @@
 ## Quick Example Games
 * name: Quick-Start Games
 * description:  Build your first games in less than 30 minutes!
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/certificates/getting-started.pdf
+* completionUrl: /static/skillmap/certificates/getting-started.pdf
 
 
 ### story-activity1
@@ -38,8 +38,8 @@
 * tags: easy, story, card, creative
 * next: clicker-activity1
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/story/story1 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/story/story-activity1.png
+* url: /skillmap/story/story1 
+* imageUrl: /static/skillmap/story/story-activity1.png
 
 
 ### clicker-activity1
@@ -50,8 +50,8 @@
 * tags: easy, clicker, game
 * next: collector-activity1
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/clicker/clicker1 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/clicker/clicker-activity1.png
+* url: /skillmap/clicker/clicker1 
+* imageUrl: /static/skillmap/clicker/clicker-activity1.png
 
 
 ### collector-activity1
@@ -62,8 +62,8 @@
 * tags: easy, collector, game
 * next: puzzle-activity1
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/collector/collector1 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/collector/collector-activity1.png
+* url: /skillmap/collector/collector1 
+* imageUrl: /static/skillmap/collector/collector-activity1.png
 
 
 ### puzzle-activity1
@@ -73,15 +73,15 @@
 * description: Make a puzzle game and test your luck!
 * tags: easy, puzzle, game
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/puzzle/puzzle1 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/puzzle/puzzle-activity1.png
+* url: /skillmap/puzzle/puzzle1 
+* imageUrl: /static/skillmap/puzzle/puzzle-activity1.png
 
 
 
 ## story
 * name: Tell Stories Using Arcade
 * description: Learn to tell engaging short stories using Microsoft MakeCode Arcade.
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/certificates/writing-stories.pdf
+* completionUrl: /static/skillmap/certificates/writing-stories.pdf
 
 
 
@@ -94,8 +94,8 @@
 * next: story-activity3
 * reqired: 1 story
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/story/story2 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/story/story-activity2.png
+* url: /skillmap/story/story2 
+* imageUrl: /static/skillmap/story/story-activity2.png
 
 ### story-activity3
 
@@ -105,8 +105,8 @@
 * tags: easy, story, joke, creative
 * next: story-activity4
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/story/story3 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/story/story-activity3.png
+* url: /skillmap/story/story3 
+* imageUrl: /static/skillmap/story/story-activity3.png
 
 
 ### story-activity4
@@ -116,8 +116,8 @@
 * description: Write a short story with a scene of your own!
 * tags: easy, story, joke, creative
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/story/story4 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/story/story-activity4.png
+* url: /skillmap/story/story4 
+* imageUrl: /static/skillmap/story/story-activity4.png
 
 
 
@@ -126,7 +126,7 @@
 ## clicker
 * name: Make a Clicker! 
 * description: Build and embellish a clicker game in MakeCode Arcade.
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/certificates/clicker-game.pdf
+* completionUrl: /static/skillmap/certificates/clicker-game.pdf
 
 
 ### clicker-activity2
@@ -138,8 +138,8 @@
 * next: clicker-activity3
 * required: 1 clicker
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/clicker/clicker2 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/clicker/clicker-activity2.png
+* url: /skillmap/clicker/clicker2 
+* imageUrl: /static/skillmap/clicker/clicker-activity2.png
 
 
 ### clicker-activity3
@@ -150,8 +150,8 @@
 * tags: easy, clicker, game
 * next: clicker-activity4
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/clicker/clicker3 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/clicker/clicker-activity3.png
+* url: /skillmap/clicker/clicker3 
+* imageUrl: /static/skillmap/clicker/clicker-activity3.png
 
 
 ### clicker-activity4
@@ -162,8 +162,8 @@
 * tags: easy, clicker, game
 * next: clicker-activity5
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/clicker/clicker4 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/clicker/clicker-activity4.png
+* url: /skillmap/clicker/clicker4 
+* imageUrl: /static/skillmap/clicker/clicker-activity4.png
 
 
 
@@ -175,8 +175,8 @@
 * tags: intermediate, clicker, game, sandbox
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/clicker/clicker5 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/clicker/clicker-activity5.png
+* url: /skillmap/clicker/clicker5 
+* imageUrl: /static/skillmap/clicker/clicker-activity5.png
 
 
 
@@ -186,7 +186,7 @@
 ## Collector
 * name: Collector Game
 * description: Build a simple collector game in MakeCode Arcade!
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/certificates/collector-game.pdf
+* completionUrl: /static/skillmap/certificates/collector-game.pdf
 
 
 
@@ -200,8 +200,8 @@
 * next: collector-activity3
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/collector/collector2 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/collector/collector-activity2.png
+* url: /skillmap/collector/collector2 
+* imageUrl: /static/skillmap/collector/collector-activity2.png
 
 
 
@@ -214,8 +214,8 @@
 * next: collector-activity4
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/collector/collector3
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/collector/collector-activity3.png
+* url: /skillmap/collector/collector3
+* imageUrl: /static/skillmap/collector/collector-activity3.png
 
 
 
@@ -229,8 +229,8 @@
 * next: collector-activity5
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/collector/collector4
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/collector/collector-activity4.png
+* url: /skillmap/collector/collector4
+* imageUrl: /static/skillmap/collector/collector-activity4.png
 
 
 
@@ -242,8 +242,8 @@
 * tags: intermediate, collector, game, sandbox
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/collector/collector5
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/collector/collector-activity5.png
+* url: /skillmap/collector/collector5
+* imageUrl: /static/skillmap/collector/collector-activity5.png
 
 
 
@@ -252,7 +252,7 @@
 ## Puzzle
 * name: Puzzle Game
 * description: Build a guess-the-number game!
-* completionUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/certificates/puzzle-game.pdf
+* completionUrl: /static/skillmap/certificates/puzzle-game.pdf
 
 
 
@@ -266,8 +266,8 @@
 * next: puzzle-activity3
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/puzzle/puzzle2 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/puzzle/puzzle-activity2.png
+* url: /skillmap/puzzle/puzzle2 
+* imageUrl: /static/skillmap/puzzle/puzzle-activity2.png
 
 
 
@@ -280,8 +280,8 @@
 * next: puzzle-activity4
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/puzzle/puzzle3 
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/puzzle/puzzle-activity3.png
+* url: /skillmap/puzzle/puzzle3 
+* imageUrl: /static/skillmap/puzzle/puzzle-activity3.png
 
 
 
@@ -293,8 +293,8 @@
 * tags: intermediate, puzzle, game
 * next: puzzle-activity5
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/puzzle/puzzle5
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/puzzle/puzzle-activity4.png
+* url: /skillmap/puzzle/puzzle5
+* imageUrl: /static/skillmap/puzzle/puzzle-activity4.png
 
 
 
@@ -306,5 +306,5 @@
 * tags: intermediate, puzzle, game, sandbox
 
 
-* url: https://microsoft.github.io/pxt-arcade/docs/skillmap/puzzle/puzzle5
-* imageUrl: https://microsoft.github.io/pxt-arcade/docs/static/skillmap/puzzle/puzzle-activity5.png
+* url: /skillmap/puzzle/puzzle5
+* imageUrl: /static/skillmap/puzzle/puzzle-activity5.png
